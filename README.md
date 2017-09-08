@@ -1,4 +1,4 @@
-# Paula Waite Individual Project
+# Ivan Hernandez Individual Project
 
 This repository will serve as an example for the Fall 2017 Enterprise Java Class. 
 
