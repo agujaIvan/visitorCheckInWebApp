@@ -1,35 +1,37 @@
 # Ivan Hernandez Individual Project
 
-This repository will serve as an example for the Fall 2017 Enterprise Java Class. 
 
 ### Problem Statement
 
-For over 20 years, cross-country (XC) ski enthusiasts in the midwest have relied on [SkinnySki.com](https://www.skinnyski.com) as the go-to website for cross-country ski information. The site has information on XC ski races, training, tips and trails.  The trail data includes descriptions, location/driving directions, trail maps, trail type (skate versus classic) and conditions (rolled, tracked, skiied in). While most trail systems have their own websites with this type of information, SkinnySki's benefit is that all the trail information is located in one place.  Even better, users are encouraged to add their own trail reports which means SkinnySki.com tends to be the most current source of information.  
+People get together in a class room to take salsa or bachata dance style where they can either learn a new dance style or improve the dance skills they already
+have. Whether you are interested in wedding dance instruction, are looking for a new hobby or way to connect with your partner, want to improve your social life, 
+or are taking your dancing skills to the next level, taking dance lessons on SALSA STUDIO you will find a welcoming community of diversity race of latinos, 
+african american, asians or white americans where they all treat very nice to each other because they all love to dance.
 
-With the growing popularity of winter fat biking (riding bikes with 3.5" or larger tires in the snow), riders have found themselves in need of a site similar to SkinnySki.com to discover and share fat bike trails and conditions. Currently, trail information is found on various social media sites and web sites, or is simply shared in email among those "in the know". I'd like to build a Fat Bike Trail Reports website to serve as the SkinnySki.com for fat biking. 
+The major issue the SALSA STUDIO is having is to know the crowed or how many people will be in each lessons or class, not to know this information is vital
+because sometimes people or students expect to have equal even or close number of men and women to partner with, the method we use in the lesson is to rotate partner 
+this way you can have a different experience of each partner every time you dance, sometimes a class session can have more men than women or viceversa, this is 
+critical because when this happen people cannot not enjoy the whole lesson of dancing because they need to wait for the next available partner on every rotation.
 
-Screenshots from SkinnySki.com:
+an solution we want to implement is to have a guest check in web app where people can go online log into a dance lesson class to be expected in it, this will
+create a list of expected guest or people and anyone before class can go online and see this list of expected guest to have an idea on how crowed the coming class
+will be.
 
-![Trail Description](images/MirrorLakeTrailExample.png)
-
-![Trail Report](images/MadisonAreaExample.png)
+![Salsa Studio](images/maxresdefault.jpg)
 
 
 ### Project Technologies/Techniques 
 
-* Security/Authentication
-  * Admin role: create/read/update/delete (crud) of all data
-  * User role: submit trail reports
-  * All: anyone can view trail information (no login required)
+* Authentication
+  * Admin role: create/read/update/delete (crud) information/users/data in the system
+  * User role: sign up for dance lessons
+  * All: anyone can view the list of available lessons and the list of expeted guest (no login required)
 * Database (MySQL and Hibernate)
-  * Store users and roles
-  * Store trail information
-* Web Services or APIs
-  * Google Maps for trail locations
-  * Weather for weather conditions at a trail location
-* Jenkins (independent research topic)
+  * Store users, teachers or host
+  * Store dance lessons informations
+  * Store a history previuos lessons
 * Logging
-  * Configurable logging using Log4J. In production, only errors will normally be logged, but logging at a debug level can be turned on to facilitate trouble-shooting. 
+  * Create a reports of potencial errors occur in the system.
 * Site and database hosted on AWS
 * Unit Testing
   * JUnit tests to achieve 80% code coverage 
