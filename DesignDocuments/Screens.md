@@ -6,7 +6,7 @@
 
 ### SignUp user
 
-![SignUp page](wireframes/signUpPage.png)
+![SignUp page](wireframes/signupPage.png)
 
 ### Login user
 
@@ -26,7 +26,7 @@
 
 ### Administrador
 
-![Administrator Page](wireframes/administrador.png)
+![Administrator Page](wireframes/Administrator.png)
 
 ### Add user by administrador
 
