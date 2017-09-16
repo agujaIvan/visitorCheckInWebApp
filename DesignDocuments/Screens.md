@@ -1,32 +1,34 @@
 # Screen Design
 
-### Home Page aka Reports Page
+### Home Page
 
-![Home Page](wireframes/1-Reports.png)
+![Home Page](wireframes/homePage.png)
 
-### Add New Trail Report Page
+### SignUp user
 
-![Add New Report](wireframes/2-NewReport.png)
+![SignUp page](wireframes/signUpPage.png)
 
-### Add New Trail Page
+### Login user
 
-![Add New Trail](wireframes/3-NewTrail.png)
+![Login Page](wireframes/loginPage.png)
 
-### Trail Information Page
+### Choose a a lession section
 
-![View Trail Info](wireframes/4-Trail.png)
+![Choose Section Page](wireframes/chooseSection.png)
 
-### Dialog for Sign In
+### View visitor section
 
-![Sign In Dialog](wireframes/6-Sign-In.png)
+![View vistor section](wireframes/viewSectionVisitors.png)
 
-### Dialog for Sign Up
+### Edit user profile
 
-![Sign up Dialog](wireframes/7-SignUp.png)
+![Edit Profile](wireframes/editUserProfile.png)
 
-### About Page
+### Administrador
 
-![About Page](wireframes/8-About.png)
+![Administrator Page](wireframes/administrador.png)
 
+### Add user by administrador
 
+![Add User Page](wireframes/addUser.png)
 
