@@ -10,3 +10,5 @@
 | 9/15/17 | Working and writing the project specification | 2.5 | |
 | 9/16/17 | Working and designing mockups| 3.5 | |
 | 9/16/17 | Writing and working on wireframe | 1.5 | |
+| 9/17/17 | Updating my project's statement | .5 | |
+| 9/17/17 | Watching video for week 3 and completing the activity | 2 | |

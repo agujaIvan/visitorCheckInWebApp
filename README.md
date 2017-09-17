@@ -35,12 +35,20 @@ will be.
 * Site and database hosted on AWS
 * Unit Testing
   * JUnit tests to achieve 80% code coverage 
+* Service/API
+  * Wheather API 
+* CSS Framework
+  * W3.CSS 
 
+### Individual Research Topic 
+
+* AngujarJS
+  
 ### Design
 
 * [Screen Design](DesignDocuments/Screens.md)
 * [Application Flow](DesignDocuments/applicationFlow.md)
-* [Database Design](DesignDocuments/databaseDiagram.png)
+* [Database Design]
 
 ### [Project Plan](ProjectPlan.md)
 
