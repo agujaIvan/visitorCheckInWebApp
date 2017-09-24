@@ -14,5 +14,5 @@
 | 9/17/17 | Watching video for week 3 and completing the activity | 2 | |
 | 9/18/17 | Working on the solution for week 3 exercise | 5 | |
 | 9/22/17 | watching video for week 4 | 2.2 | |
-| 9/22/17 | Making mockups for the diagram design| | 1.2 | |
+| 9/22/17 | Making mockups for the diagram design| 1.2 | |
 | 9/23/17 | Working on the UML database design | 3 | |
