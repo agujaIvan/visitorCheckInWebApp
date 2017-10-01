@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="visitorcheckinappdb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sakila"/>
+    <schema id="7" parent="1" name="sample"/>
+    <schema id="8" parent="1" name="sample_test"/>
+    <schema id="9" parent="1" name="sys"/>
+    <schema id="10" parent="1" name="world"/>
+    <table id="11" parent="2" name="dancertable"/>
+    <table id="12" parent="2" name="gendertable"/>
+    <column id="13" parent="11" name="idDancerTable">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="11" name="dancerUser">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="11" name="dancerPassword">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="16" parent="11" name="dancerEmail">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="11" name="dancerFistName">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="18" parent="11" name="dancerLastName">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="19" parent="11" name="dancerDate">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="11" name="genderTable_idGenderTable">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="11" name="dancerPhoto">
+      <Position>9</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="22" parent="11" name="fk_dancerTable_genderTable1_idx">
+      <ColNames>genderTable_idGenderTable</ColNames>
+    </index>
+    <key id="23" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idDancerTable</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="24" parent="11" name="fk_dancerTable_genderTable1">
+      <ColNames>genderTable_idGenderTable</ColNames>
+      <RefSchemaName>visitorcheckinappdb</RefSchemaName>
+      <RefTableName>gendertable</RefTableName>
+      <RefColNames>idGenderTable</RefColNames>
+    </foreign-key>
+    <column id="25" parent="12" name="idGenderTable">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="12" name="genderName">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="27" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idGenderTable</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
