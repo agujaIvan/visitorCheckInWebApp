@@ -116,8 +116,8 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#2486#2487#0" expanded="true" />
                 <element signature="e#2530#2531#0" expanded="true" />
-                <marker date="1506824111036" expanded="false" signature="2661:2672" ph=" { " />
-                <marker date="1506824111036" expanded="false" signature="2704:2710" ph=" }" />
+                <marker date="1506872226536" expanded="false" signature="2661:2672" ph=" { " />
+                <marker date="1506872226536" expanded="false" signature="2704:2710" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -806,7 +806,7 @@
       <workItem from="1506792225357" duration="3370000" />
       <workItem from="1506809377823" duration="1718000" />
       <workItem from="1506812744164" duration="11676000" />
-      <workItem from="1506866462774" duration="567000" />
+      <workItem from="1506866462774" duration="1133000" />
     </task>
     <servers />
   </component>
@@ -843,7 +843,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49647000" />
+    <option name="totallyTimeSpent" value="50213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1267,8 +1267,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#2486#2487#0" expanded="true" />
             <element signature="e#2530#2531#0" expanded="true" />
-            <marker date="1506824111036" expanded="false" signature="2661:2672" ph=" { " />
-            <marker date="1506824111036" expanded="false" signature="2704:2710" ph=" }" />
+            <marker date="1506872226536" expanded="false" signature="2661:2672" ph=" { " />
+            <marker date="1506872226536" expanded="false" signature="2704:2710" ph=" }" />
           </folding>
         </state>
       </provider>
