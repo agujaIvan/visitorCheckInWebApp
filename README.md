@@ -1,4 +1,4 @@
-# Ivan Hernandez Individual Project
+# Visitor CheckIn App
 
 
 ### Problem Statement
