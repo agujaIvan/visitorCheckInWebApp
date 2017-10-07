@@ -1,7 +1,5 @@
 package edu.matc.controller;
 
-import edu.matc.persistence.StatusHibernateDao;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,8 +16,8 @@ public class AddingStatus extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        StatusHibernateDao statusHibernateDao = new StatusHibernateDao();
-        statusHibernateDao.addNewRecord("Active");
+        /*StatusHibernateDao statusHibernateDao = new StatusHibernateDao();
+        statusHibernateDao.addNewRecord("Active");*/
         /*if (req.getParameter("submit").equals("search")) {
             req.setAttribute("users", userDao.getUserByLastName(req.getParameter("searchTerm")));
         } else {

@@ -1,9 +1,8 @@
 package edu.matc.entity;
 
 import org.hibernate.annotations.GenericGenerator;
-
+import edu.matc.utility.LocalDateAttributeConverter;
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.time.LocalDate;
 
 @Entity
@@ -15,7 +14,8 @@ public class DancertableEntity {
     private String dancerEmail;
     private String dancerFistName;
     private String dancerLastName;
-    private Timestamp dancerDate;
+    //private Timestamp dancerDate;
+    private LocalDate dancerDate;
     private int genderTableIdGenderTable;
     private String dancerPhoto;
     private GendertableEntity gendertableByGenderTableIdGenderTable;
@@ -84,11 +84,15 @@ public class DancertableEntity {
 
     @Basic
     @Column(name = "dancerDate", nullable = false)
-    public Timestamp getDancerDate() {
+    @Convert(converter = LocalDateAttributeConverter.class)
+    public LocalDate getDancerDate() {
         return dancerDate;
     }
+    //public Timestamp getDancerDate() {
+        //return dancerDate;
+    //}
 
-    public void setDancerDate(Timestamp dancerDate) {
+    public void setDancerDate(LocalDate dancerDate) {
         this.dancerDate = dancerDate;
     }
 
@@ -158,5 +162,21 @@ public class DancertableEntity {
 
     public void setGendertableByGenderTableIdGenderTable(GendertableEntity gendertableByGenderTableIdGenderTable) {
         this.gendertableByGenderTableIdGenderTable = gendertableByGenderTableIdGenderTable;
+    }
+
+    @Override
+    public String toString() {
+        return "DancertableEntity{" +
+                "idDancerTable=" + idDancerTable +
+                ", dancerUser='" + dancerUser + '\'' +
+                ", dancerPassword='" + dancerPassword + '\'' +
+                ", dancerEmail='" + dancerEmail + '\'' +
+                ", dancerFistName='" + dancerFistName + '\'' +
+                ", dancerLastName='" + dancerLastName + '\'' +
+                ", dancerDate=" + dancerDate +
+                ", genderTableIdGenderTable=" + genderTableIdGenderTable +
+                ", dancerPhoto='" + dancerPhoto + '\'' +
+                ", gendertableByGenderTableIdGenderTable=" + gendertableByGenderTableIdGenderTable +
+                '}';
     }
 }

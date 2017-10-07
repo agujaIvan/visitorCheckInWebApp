@@ -3,17 +3,13 @@ package edu.matc.persistence;
 
 import edu.matc.entity.DancertableEntity;
 import edu.matc.entity.GendertableEntity;
-import edu.matc.entity.Status;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;
-import java.util.Iterator;
-import java.util.List;
 
 public class GenderHibernateDao {
 
@@ -47,7 +43,7 @@ public class GenderHibernateDao {
         return operationStatus;
     }
 
-    public boolean addNewDancer(Timestamp dancerDate, String dancerEmail, String firstName,
+    public boolean addNewDancer(LocalDate dancerDate, String dancerEmail, String firstName,
                                 String lastName, String dancerPassword, String dancerPhoto,
                                 String dancerUser, int dancerGender) {
         Session session = null;
@@ -83,4 +79,6 @@ public class GenderHibernateDao {
         }
         return operationStatus;
     }
+
+
 }

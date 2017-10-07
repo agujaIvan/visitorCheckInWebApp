@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 public class GenderHibernateDaoTest {
     GenderHibernateDao gender = new GenderHibernateDao();
-
+/*
 
     @Test
     public void addNewGender() throws Exception {
@@ -26,4 +26,5 @@ public class GenderHibernateDaoTest {
                         "Ivan", "Hernandez", "something",
                         "/photos", "aguja", 1));
     }
+    */
 }

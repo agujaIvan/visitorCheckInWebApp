@@ -21,7 +21,7 @@
         <property name="show_sql">true</property>
 
         <!-- List the annotated entity class/es -->
-        <mapping class="edu.matc.entity.Status"/>
+
         <mapping class="edu.matc.entity.GendertableEntity"/>
         <mapping class="edu.matc.entity.DancertableEntity"/>
 
