@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <link rel="stylesheet" href="css/HomePageStyle.css"/>
+
+
+</head>
 <body>
-
-<div class="w3-container w3-center">
-    <h2>Visitor CheckIn WebApp</h2>
-    <!-- <p>Buttons bars can be centered using the <strong>w3-center</strong> class:</p> -->
-    <div class="w3-bar">
-        <a href="/signupPage"><button class="w3-button w3-black">Signup</button></a>
-        <button class="w3-button w3-teal">SignIn</button>
-        <button class="w3-button w3-red">Button</button>
-    </div>
+<div class="modal">
+    <form id="homePage">
+        <h2>Visitor Check in App</h2>
+        <button type="submit" id="btnRegistered">Registered User</button>
+        <button type="submit" id="btnGuest">Guest</button>
+        <span><a href="#">New Sign Up?</a></span>
+    </form>
 </div>
-
 </body>
 </html>
