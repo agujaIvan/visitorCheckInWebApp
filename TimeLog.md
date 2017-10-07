@@ -16,3 +16,9 @@
 | 9/22/17 | watching video for week 4 | 2.2 | |
 | 9/22/17 | Making mockups for the diagram design| 1.2 | |
 | 9/23/17 | Working on the UML database design | 3 | |
+| 9/26/17 | Working on Hibernate DAO solution for week 4 | 1.5 | |
+| 9/30/17 | Working on Hibernate DAO solution One to many | 5 | |
+| 10/01/17 | Troubleshooting issues to connect to AWS | 3 | |
+| 10/02/17 | fixing issues with putty and ssh connection | 3 | |
+| 10/01/17 | deploying the war file on AWS | 1 | |
+| 10/04/17 | having issues with Maven plugin to get it to run | 3 | |
