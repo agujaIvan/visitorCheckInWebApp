@@ -23,7 +23,7 @@
         <!-- List the annotated entity class/es -->
 
         <mapping class="edu.matc.entity.GendertableEntity"/>
-        <mapping class="edu.matc.entity.DancertableEntity"/>
+        <mapping class="edu.matc.entity.UsertableEntity"/>
 
     </session-factory>
 

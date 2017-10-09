@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <link href="../css/SignUpStyle.css" rel="stylesheet" />
+    <link href="css/SignUpStyle.css" rel="stylesheet" />
 </head>
 <body>
 <div class="modal">
-    <form id="signup" action="/createUserServlet" method="post" >
+    <form id="signup" action="createUserServlet" method="post" >
         <h1>SIGN UP</h1>
         <div class="container divPhoto">
-            <img src="../images/img_user.png" />
+            <img src="images/img_user.png" />
         </div>
         <div class="container">
             <p class="left">Username</p>

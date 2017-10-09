@@ -10,7 +10,7 @@ import java.util.Collection;
 public class GendertableEntity {
     private int idGenderTable;
     private String genderName;
-    private Collection<DancertableEntity> dancertablesByIdGenderTable;
+    private Collection<UsertableEntity> dancertablesByIdGenderTable;
 
     public GendertableEntity(){}
     @Id
@@ -56,11 +56,11 @@ public class GendertableEntity {
     }
 
     @OneToMany(mappedBy = "gendertableByGenderTableIdGenderTable")
-    public Collection<DancertableEntity> getDancertablesByIdGenderTable() {
+    public Collection<UsertableEntity> getDancertablesByIdGenderTable() {
         return dancertablesByIdGenderTable;
     }
 
-    public void setDancertablesByIdGenderTable(Collection<DancertableEntity> dancertablesByIdGenderTable) {
+    public void setDancertablesByIdGenderTable(Collection<UsertableEntity> dancertablesByIdGenderTable) {
         this.dancertablesByIdGenderTable = dancertablesByIdGenderTable;
     }
 }

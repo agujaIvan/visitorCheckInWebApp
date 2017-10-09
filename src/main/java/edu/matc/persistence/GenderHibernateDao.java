@@ -1,14 +1,13 @@
 package edu.matc.persistence;
 
 
-import edu.matc.entity.DancertableEntity;
+import edu.matc.entity.UsertableEntity;
 import edu.matc.entity.GendertableEntity;
 import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.sql.Timestamp;
 import java.time.LocalDate;
 
 public class GenderHibernateDao {
@@ -43,30 +42,31 @@ public class GenderHibernateDao {
         return operationStatus;
     }
 
-    public boolean addNewDancer(LocalDate dancerDate, String dancerEmail, String firstName,
-                                String lastName, String dancerPassword, String dancerPhoto,
-                                String dancerUser, int dancerGender) {
+    public boolean addNewUser(LocalDate dancerDate, String dancerEmail, String firstName,
+                              String lastName, String dancerPassword, String dancerPhoto,
+                              String dancerUser, int dancerGender, String userRole) {
         Session session = null;
         Transaction tx = null;
         boolean operationStatus = false;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             tx = session.beginTransaction();
-            DancertableEntity dancer = new DancertableEntity();
-            dancer.setDancerDate(dancerDate);
-            dancer.setDancerEmail(dancerEmail);
-            dancer.setDancerFistName(firstName);
-            dancer.setDancerLastName(lastName);
-            dancer.setDancerPassword(dancerPassword);
-            dancer.setDancerPhoto(dancerPhoto);
-            dancer.setDancerUser(dancerUser);
+            UsertableEntity user = new UsertableEntity();
+            user.setUserDate(dancerDate);
+            user.setUserEmail(dancerEmail);
+            user.setUserFirstName(firstName);
+            user.setUserLastName(lastName);
+            user.setUserPassword(dancerPassword);
+            user.setUserPhoto(dancerPhoto);
+            user.setUserName(dancerUser);
+            user.setUserRole(userRole);
             GendertableEntity gender =
                     (GendertableEntity) session.get(GendertableEntity.class, dancerGender);
 
 
-            dancer.setGendertableByGenderTableIdGenderTable(gender);
+            user.setGendertableByGenderTableIdGenderTable(gender);
 
-            session.save(dancer);
+            session.save(user);
             tx.commit();
             operationStatus = true;
         } catch (HibernateException he) {

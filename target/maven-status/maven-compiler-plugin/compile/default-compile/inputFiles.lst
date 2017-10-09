@@ -3,8 +3,8 @@ C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\contr
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\utility\LocalDateAttributeConverter.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\GendertableEntity.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\controller\CreateUserServlet.java
-C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\DancertableEntity.java
-C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\DancerHibernateDao.java
+C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\UsertableEntity.java
+C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\controller\HomePageServlet.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\Database.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\SessionFactoryProvider.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\GenderHibernateDao.java

@@ -1,10 +1,5 @@
 package edu.matc.controller;
 
-import edu.matc.entity.DancertableEntity;
-import edu.matc.entity.GendertableEntity;
-import edu.matc.persistence.DancerHibernateDao;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,7 +23,7 @@ public class CreateUserServlet extends HttpServlet {
 
 
 
-            GenderHibernateDao dancer = new GenderHibernateDao();
+            GenderHibernateDao user = new GenderHibernateDao();
             LocalDate currentDate = LocalDate.now();
 
             String userName = req.getParameter("userName");
@@ -37,11 +32,11 @@ public class CreateUserServlet extends HttpServlet {
             int gender = Integer.parseInt(req.getParameter("gender"));
             String email = req.getParameter("email");
             String password = req.getParameter("password");
+            String role = "dancer";
+            user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
+                    gender, role);
 
-            dancer.addNewDancer(currentDate, email, firstName, lastName, password, "", userName,
-                    gender);
-
-            String url = "/jsp/result.jsp";
+            String url = "jsp/result.jsp";
             resp.sendRedirect(url);
 
         }

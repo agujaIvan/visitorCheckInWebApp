@@ -1,11 +1,11 @@
 edu\matc\persistence\Database.class
-edu\matc\entity\DancertableEntity.class
+edu\matc\controller\HomePageServlet.class
 edu\matc\entity\ClassTable.class
 edu\matc\utility\LocalDateAttributeConverter.class
 edu\matc\controller\CreateUserServlet.class
 edu\matc\controller\Signup.class
 edu\matc\entity\GendertableEntity.class
-edu\matc\persistence\DancerHibernateDao.class
+edu\matc\entity\UsertableEntity.class
 edu\matc\persistence\SessionFactoryProvider.class
 edu\matc\controller\AddingStatus.class
 edu\matc\persistence\GenderHibernateDao.class
