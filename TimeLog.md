@@ -22,3 +22,6 @@
 | 10/02/17 | fixing issues with putty and ssh connection | 3 | |
 | 10/01/17 | deploying the war file on AWS | 1 | |
 | 10/04/17 | having issues with Maven plugin to get it to run | 3 | |
+| 10/07/17 | working on the index and signup page to save user to database | 7 | |
+| 10/08/17 | struggling on the authentication process for my project | 2 | |
+| 10/04/17 | finiliizing the exercise for week 6 | 2 | |
