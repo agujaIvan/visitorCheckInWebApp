@@ -6,21 +6,21 @@
 </head>
 <body>
     <div class="modal">
-        <form id="loginForm">
+        <form id="loginForm" action="loginServlet" method="post">
             <h2>LOGIN</h2>
             <div class="container1">
                 <p class="labels">Username</p>
-                <input type="text" placeholder="Your username" id="username" />
+                <input type="text" placeholder="Your username" id="username" name="userName" />
                 <p class="labels password">Password</p>
-                <input type="password" placeholder="Your password" id="password" />
+                <input type="password" placeholder="Your password" id="password" name="userPassword" />
             </div>
             <div class="container2">
-                <input type="checkbox" />
-                <p class="labels2">Login as an Teacher / Admin</p>
+                <!--<input type="checkbox" />
+                <p class="labels2">Login as an Teacher / Admin</p>-->
                 <input type="checkbox" checked="checked" />
                 <p class="labels2">Remember me</p>
             </div>
-            <button type="submit" id="btnLogin">Login</button>
+            <button type="submit" id="btnLogin" name="submit">Login</button>
         </form>
     </div>
 </body>

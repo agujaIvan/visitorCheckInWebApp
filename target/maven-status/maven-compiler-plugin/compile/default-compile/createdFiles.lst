@@ -5,6 +5,7 @@ edu\matc\utility\LocalDateAttributeConverter.class
 edu\matc\controller\CreateUserServlet.class
 edu\matc\controller\Signup.class
 edu\matc\entity\GendertableEntity.class
+edu\matc\controller\LoginServlet.class
 edu\matc\entity\UsertableEntity.class
 edu\matc\persistence\SessionFactoryProvider.class
 edu\matc\controller\AddingStatus.class
