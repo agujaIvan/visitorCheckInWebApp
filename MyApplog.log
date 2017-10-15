@@ -441,7 +441,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2017-09-30 19:13:07,468 708  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {}
 2017-09-30 19:13:07,469 709  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 19:13:07,473 713  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
-2017-09-30 19:13:08,114 1354 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for statusTable
+2017-09-30 19:13:08,114 1354 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for statusTable
 org.hibernate.exception.JDBCConnectionException: Error calling Driver#connect
 	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator$1$1.convert(BasicConnectionCreator.java:122)
 	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:140)
@@ -460,7 +460,7 @@ org.hibernate.exception.JDBCConnectionException: Error calling Driver#connect
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1845)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:28)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:28)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -594,7 +594,7 @@ Caused by: java.sql.SQLException: Access denied for user ''@'localhost' (using p
 2017-09-30 19:30:04,920 414  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 19:30:04,924 418  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 19:30:05,562 1056 [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 19:30:06,125 1619 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 19:30:06,125 1619 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -605,7 +605,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:28)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:28)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -690,7 +690,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 19:35:11,534 337  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 19:35:11,536 339  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 19:35:11,954 757  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 19:35:12,404 1207 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 19:35:12,404 1207 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -701,7 +701,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:28)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:28)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -738,7 +738,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 19:41:16,321 472  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 19:41:16,324 475  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 19:41:16,821 972  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 19:41:17,400 1551 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 19:41:17,400 1551 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -749,7 +749,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:28)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:28)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -786,7 +786,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 19:58:20,003 448  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 19:58:20,006 451  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 19:58:20,491 936  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 19:58:21,011 1456 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 19:58:21,011 1456 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -797,7 +797,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:29)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:29)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -834,7 +834,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 20:00:26,473 331  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 20:00:26,474 332  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 20:00:26,882 740  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 20:00:27,410 1268 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 20:00:27,410 1268 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -845,7 +845,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:29)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:29)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -882,7 +882,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 20:03:01,179 317  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 20:03:01,181 319  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 20:03:01,574 712  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 20:03:02,068 1206 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 20:03:02,068 1206 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -893,7 +893,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:29)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:29)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -930,7 +930,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 20:05:36,294 338  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
 2017-09-30 20:05:36,295 339  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
 2017-09-30 20:05:36,713 757  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2017-09-30 20:05:37,186 1230 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-09-30 20:05:37,186 1230 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.entity.UsertableEntity column: genderTable_idGenderTable (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:709)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:731)
@@ -941,7 +941,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1851)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:24)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:29)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:29)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1025,7 +1025,7 @@ org.hibernate.MappingException: Repeated column in mapping for entity: edu.matc.
 2017-09-30 20:32:23,038 772  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-09-30 20:32:23,540 1274 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-09-30 20:32:23,549 1283 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
-2017-09-30 20:32:24,514 2248 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-09-30 20:32:24,514 2248 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.PropertyValueException: not-null property references a null or transient value : edu.matc.entity.UsertableEntity.gendertableByGenderTableIdGenderTable
 	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:106)
 	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:132)
@@ -1045,7 +1045,7 @@ org.hibernate.PropertyValueException: not-null property references a null or tra
 	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:715)
 	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:707)
 	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:702)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:67)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:67)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1089,7 +1089,7 @@ org.hibernate.PropertyValueException: not-null property references a null or tra
 2017-09-30 21:00:30,205 3296 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
 2017-09-30 21:00:30,207 3298 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1292, SQLState: 22007
 2017-09-30 21:00:30,207 3298 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Incorrect datetime value: '\xAC\xED\x00\x05sr\x00\x0Djava.time.Ser\x95]\x84\xBA\x1B"H\xB2\x0C\x00\x00xpw\x07\x03\x00\x00\x07\xE1\x09\x1Ex' for column 'userDate' at row 1
-2017-09-30 21:00:30,209 3300 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-09-30 21:00:30,209 3300 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.exception.DataException: could not execute statement
 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:69)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
@@ -1108,7 +1108,7 @@ org.hibernate.exception.DataException: could not execute statement
 	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
 	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
 	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:73)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:73)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1175,7 +1175,7 @@ Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect dateti
 2017-09-30 21:13:50,130 799  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-09-30 21:13:50,699 1368 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-09-30 21:13:50,707 1376 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
-2017-09-30 21:13:51,796 2465 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-09-30 21:13:51,796 2465 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.PropertyValueException: not-null property references a null or transient value : edu.matc.entity.UsertableEntity.gendertableByGenderTableIdGenderTable
 	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:106)
 	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:132)
@@ -1195,7 +1195,7 @@ org.hibernate.PropertyValueException: not-null property references a null or tra
 	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:715)
 	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:707)
 	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:702)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:73)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:73)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1239,7 +1239,7 @@ org.hibernate.PropertyValueException: not-null property references a null or tra
 2017-09-30 21:14:26,393 2519 [main] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
 2017-09-30 21:14:26,399 2525 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
 2017-09-30 21:14:26,399 2525 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '0' for key 'PRIMARY'
-2017-09-30 21:14:26,402 2528 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-09-30 21:14:26,402 2528 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.exception.ConstraintViolationException: could not execute statement
 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:72)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
@@ -1258,7 +1258,7 @@ org.hibernate.exception.ConstraintViolationException: could not execute statemen
 	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
 	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
 	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:74)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:74)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1332,7 +1332,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2017-09-30 21:16:04,031 813  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-09-30 21:16:04,546 1328 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-09-30 21:16:04,556 1338 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
-2017-09-30 21:16:05,763 2545 [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-09-30 21:16:05,763 2545 [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.PropertyValueException: not-null property references a null or transient value : edu.matc.entity.UsertableEntity.gendertableByGenderTableIdGenderTable
 	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:106)
 	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:132)
@@ -1352,7 +1352,7 @@ org.hibernate.PropertyValueException: not-null property references a null or tra
 	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:715)
 	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:707)
 	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:702)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:73)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:73)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1490,7 +1490,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2017-10-07 13:10:15,081 18   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
 2017-10-07 13:10:15,104 41   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
 2017-10-07 13:10:15,104 41   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
-2017-10-07 13:10:15,176 113  [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-10-07 13:10:15,176 113  [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] declared in Hibernate configuration <mapping/> entry
 	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:2281)
 	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:2229)
@@ -1500,7 +1500,7 @@ org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] d
 	at org.hibernate.cfg.Configuration.configure(Configuration.java:2056)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:20)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:52)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:52)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1543,7 +1543,7 @@ Caused by: java.lang.ClassNotFoundException: edu.matc.entity.Status
 	... 38 more
 2017-10-07 13:10:15,189 126  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
 2017-10-07 13:10:15,189 126  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
-2017-10-07 13:10:15,197 134  [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-10-07 13:10:15,197 134  [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] declared in Hibernate configuration <mapping/> entry
 	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:2281)
 	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:2229)
@@ -1553,7 +1553,7 @@ org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] d
 	at org.hibernate.cfg.Configuration.configure(Configuration.java:2056)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:20)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:27)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:27)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1600,7 +1600,7 @@ Caused by: java.lang.ClassNotFoundException: edu.matc.entity.Status
 2017-10-07 13:12:23,162 19   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
 2017-10-07 13:12:23,183 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
 2017-10-07 13:12:23,183 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
-2017-10-07 13:12:23,256 113  [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-10-07 13:12:23,256 113  [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] declared in Hibernate configuration <mapping/> entry
 	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:2281)
 	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:2229)
@@ -1610,7 +1610,7 @@ org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] d
 	at org.hibernate.cfg.Configuration.configure(Configuration.java:2056)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:20)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:52)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:52)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewDancer(GenderHibernateDaoTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1653,7 +1653,7 @@ Caused by: java.lang.ClassNotFoundException: edu.matc.entity.Status
 	... 38 more
 2017-10-07 13:12:23,270 127  [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
 2017-10-07 13:12:23,271 128  [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
-2017-10-07 13:12:23,280 137  [main] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for GenderTable
+2017-10-07 13:12:23,280 137  [main] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for GenderTable
 org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] declared in Hibernate configuration <mapping/> entry
 	at org.hibernate.cfg.Configuration.parseMappingElement(Configuration.java:2281)
 	at org.hibernate.cfg.Configuration.parseSessionFactory(Configuration.java:2229)
@@ -1663,7 +1663,7 @@ org.hibernate.MappingException: Unable to load class [ edu.matc.entity.Status] d
 	at org.hibernate.cfg.Configuration.configure(Configuration.java:2056)
 	at edu.matc.persistence.SessionFactoryProvider.createSessionFactory(SessionFactoryProvider.java:20)
 	at edu.matc.persistence.SessionFactoryProvider.getSessionFactory(SessionFactoryProvider.java:29)
-	at edu.matc.persistence.GenderHibernateDao.addNewRecord(GenderHibernateDao.java:27)
+	at edu.matc.persistence.UserHibernateDao.addNewRecord(GenderHibernateDao.java:27)
 	at edu.matc.persistence.GenderHibernateDaoTest.addNewGender(GenderHibernateDaoTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -2003,8 +2003,8 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2017-10-07 16:39:37,393 1023 [http-nio-8080-exec-11] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-10-07 16:39:37,803 1433 [http-nio-8080-exec-11] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-10-07 16:39:37,818 1448 [http-nio-8080-exec-11] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
-2017-10-07 16:39:38,879 2509 [http-nio-8080-exec-11] INFO  edu.matc.persistence.GenderHibernateDao  - Famale
-2017-10-07 16:39:38,879 2509 [http-nio-8080-exec-11] INFO  edu.matc.persistence.GenderHibernateDao  - 2
+2017-10-07 16:39:38,879 2509 [http-nio-8080-exec-11] INFO  edu.matc.persistence.UserHibernateDao  - Famale
+2017-10-07 16:39:38,879 2509 [http-nio-8080-exec-11] INFO  edu.matc.persistence.UserHibernateDao  - 2
 2017-10-07 16:39:38,885 2515 [http-nio-8080-exec-11] INFO  edu.matc.controller.CreateUserServlet  - DancertableEntity{idUserTable=0, userName='aguja', userPassword='1234', userEmail='hernandez12052011@gmail.com', userFirstName='Ivan', userLastName='Hernandez', userDate=2017-10-07, genderTableIdGenderTable=0, userPhoto='null', gendertableByGenderTableIdGenderTable=edu.matc.entity.GendertableEntity@7cfd29a6}
 2017-10-07 18:11:48,924 0    [http-nio-8080-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
 2017-10-07 18:11:48,942 18   [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
@@ -2071,7 +2071,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 2017-10-08 15:45:49,707 2852 [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
 2017-10-08 15:45:49,707 2852 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
 2017-10-08 15:45:49,707 2852 [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'userFirstName' in 'field list'
-2017-10-08 15:45:49,722 2867 [http-nio-8080-exec-4] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-10-08 15:45:49,722 2867 [http-nio-8080-exec-4] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.exception.SQLGrammarException: could not execute statement
 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
@@ -2090,7 +2090,7 @@ org.hibernate.exception.SQLGrammarException: could not execute statement
 	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
 	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
 	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
-	at edu.matc.persistence.GenderHibernateDao.addNewDancer(GenderHibernateDao.java:69)
+	at edu.matc.persistence.UserHibernateDao.addNewDancer(GenderHibernateDao.java:69)
 	at edu.matc.controller.CreateUserServlet.doPost(CreateUserServlet.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -2158,7 +2158,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-10-08 15:54:06,033 2496 [http-nio-8080-exec-25] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
 2017-10-08 15:54:06,033 2496 [http-nio-8080-exec-25] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
 2017-10-08 15:54:06,033 2496 [http-nio-8080-exec-25] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'userFirstName' in 'field list'
-2017-10-08 15:54:06,049 2512 [http-nio-8080-exec-25] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-10-08 15:54:06,049 2512 [http-nio-8080-exec-25] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.exception.SQLGrammarException: could not execute statement
 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
@@ -2177,7 +2177,7 @@ org.hibernate.exception.SQLGrammarException: could not execute statement
 	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
 	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
 	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
-	at edu.matc.persistence.GenderHibernateDao.addNewUser(GenderHibernateDao.java:70)
+	at edu.matc.persistence.UserHibernateDao.addNewUser(GenderHibernateDao.java:70)
 	at edu.matc.controller.CreateUserServlet.doPost(CreateUserServlet.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -2245,7 +2245,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-10-08 16:00:32,808 2483 [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
 2017-10-08 16:00:32,808 2483 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1054, SQLState: 42S22
 2017-10-08 16:00:32,808 2483 [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Unknown column 'userFirstName' in 'field list'
-2017-10-08 16:00:32,824 2499 [http-nio-8080-exec-1] INFO  edu.matc.persistence.GenderHibernateDao  - Error adding new record for Dancer table
+2017-10-08 16:00:32,824 2499 [http-nio-8080-exec-1] INFO  edu.matc.persistence.UserHibernateDao  - Error adding new record for Dancer table
 org.hibernate.exception.SQLGrammarException: could not execute statement
 	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:80)
 	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:49)
@@ -2264,7 +2264,7 @@ org.hibernate.exception.SQLGrammarException: could not execute statement
 	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
 	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
 	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
-	at edu.matc.persistence.GenderHibernateDao.addNewUser(GenderHibernateDao.java:70)
+	at edu.matc.persistence.UserHibernateDao.addNewUser(GenderHibernateDao.java:70)
 	at edu.matc.controller.CreateUserServlet.doPost(CreateUserServlet.java:36)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
@@ -2609,3 +2609,288 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown co
 2017-10-10 12:00:44,602 823  [http-nio-8080-exec-62] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-10-10 12:00:44,932 1153 [http-nio-8080-exec-62] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-10-10 12:00:44,948 1169 [http-nio-8080-exec-62] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-11 12:12:08,895 0    [http-nio-8080-exec-6] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-11 12:12:08,916 21   [http-nio-8080-exec-6] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-11 12:12:08,922 27   [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-11 12:12:08,925 30   [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-11 12:12:08,991 96   [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-11 12:12:08,992 97   [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-11 12:12:09,120 225  [http-nio-8080-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-11 12:12:09,386 491  [http-nio-8080-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-11 12:12:09,395 500  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-11 12:12:09,395 500  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-11 12:12:09,395 500  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-11 12:12:09,400 505  [http-nio-8080-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-11 12:12:09,805 910  [http-nio-8080-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-11 12:12:10,291 1396 [http-nio-8080-exec-6] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-11 12:12:10,304 1409 [http-nio-8080-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 18:47:58,018 0    [http-nio-8080-exec-4] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 18:47:58,056 38   [http-nio-8080-exec-4] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 18:47:58,072 54   [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 18:47:58,072 54   [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 18:47:58,152 134  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 18:47:58,152 134  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 18:47:58,304 286  [http-nio-8080-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 18:47:58,588 570  [http-nio-8080-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 18:47:58,604 586  [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 18:47:58,604 586  [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 18:47:58,604 586  [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 18:47:58,604 586  [http-nio-8080-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 18:47:59,205 1187 [http-nio-8080-exec-4] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 18:47:59,720 1702 [http-nio-8080-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 18:47:59,736 1718 [http-nio-8080-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 19:56:23,823 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 19:56:23,840 17   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 19:56:23,840 17   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 19:56:23,840 17   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 19:56:23,919 96   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 19:56:23,919 96   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 19:56:24,046 223  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 19:56:24,378 555  [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 19:56:24,393 570  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 19:56:24,393 570  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 19:56:24,393 570  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 19:56:24,393 570  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 19:56:24,848 1025 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 19:56:25,248 1425 [http-nio-8080-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 19:56:25,248 1425 [http-nio-8080-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 19:59:09,229 0    [http-nio-8080-exec-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 19:59:09,245 16   [http-nio-8080-exec-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 19:59:09,261 32   [http-nio-8080-exec-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 19:59:09,261 32   [http-nio-8080-exec-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 19:59:09,345 116  [http-nio-8080-exec-18] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 19:59:09,345 116  [http-nio-8080-exec-18] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 19:59:09,492 263  [http-nio-8080-exec-18] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 19:59:09,793 564  [http-nio-8080-exec-18] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 19:59:09,810 581  [http-nio-8080-exec-18] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 19:59:09,811 582  [http-nio-8080-exec-18] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 19:59:09,811 582  [http-nio-8080-exec-18] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 19:59:09,814 585  [http-nio-8080-exec-18] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 19:59:10,247 1018 [http-nio-8080-exec-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 19:59:10,617 1388 [http-nio-8080-exec-18] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 19:59:10,633 1404 [http-nio-8080-exec-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 20:00:35,094 0    [http-nio-8080-exec-29] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 20:00:35,116 22   [http-nio-8080-exec-29] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 20:00:35,116 22   [http-nio-8080-exec-29] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 20:00:35,131 37   [http-nio-8080-exec-29] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 20:00:35,194 100  [http-nio-8080-exec-29] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 20:00:35,194 100  [http-nio-8080-exec-29] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 20:00:35,294 200  [http-nio-8080-exec-29] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 20:00:35,495 401  [http-nio-8080-exec-29] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 20:00:35,495 401  [http-nio-8080-exec-29] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 20:00:35,495 401  [http-nio-8080-exec-29] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 20:00:35,495 401  [http-nio-8080-exec-29] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 20:00:35,495 401  [http-nio-8080-exec-29] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 20:00:35,849 755  [http-nio-8080-exec-29] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 20:00:36,166 1072 [http-nio-8080-exec-29] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 20:00:36,166 1072 [http-nio-8080-exec-29] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 20:14:02,222 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 20:14:02,255 33   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 20:14:02,260 38   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 20:14:02,260 38   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 20:14:02,323 101  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 20:14:02,323 101  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 20:14:02,439 217  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 20:14:02,677 455  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 20:14:02,692 470  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 20:14:02,692 470  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 20:14:02,692 470  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 20:14:02,692 470  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 20:14:03,039 817  [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 20:14:03,423 1201 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 20:14:03,439 1217 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 20:18:00,315 0    [http-nio-8080-exec-19] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 20:18:00,330 15   [http-nio-8080-exec-19] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 20:18:00,346 31   [http-nio-8080-exec-19] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 20:18:00,346 31   [http-nio-8080-exec-19] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 20:18:00,400 85   [http-nio-8080-exec-19] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 20:18:00,400 85   [http-nio-8080-exec-19] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 20:18:00,500 185  [http-nio-8080-exec-19] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 20:18:00,732 417  [http-nio-8080-exec-19] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 20:18:00,747 432  [http-nio-8080-exec-19] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 20:18:00,747 432  [http-nio-8080-exec-19] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 20:18:00,747 432  [http-nio-8080-exec-19] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 20:18:00,747 432  [http-nio-8080-exec-19] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 20:18:01,086 771  [http-nio-8080-exec-19] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 20:18:01,502 1187 [http-nio-8080-exec-19] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 20:18:01,518 1203 [http-nio-8080-exec-19] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 20:50:53,044 0    [http-nio-8080-exec-23] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 20:50:53,062 18   [http-nio-8080-exec-23] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 20:50:53,062 18   [http-nio-8080-exec-23] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 20:50:53,062 18   [http-nio-8080-exec-23] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 20:50:53,108 64   [http-nio-8080-exec-23] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 20:50:53,108 64   [http-nio-8080-exec-23] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 20:50:53,209 165  [http-nio-8080-exec-23] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 20:50:53,425 381  [http-nio-8080-exec-23] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 20:50:53,442 398  [http-nio-8080-exec-23] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 20:50:53,443 399  [http-nio-8080-exec-23] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 20:50:53,443 399  [http-nio-8080-exec-23] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 20:50:53,446 402  [http-nio-8080-exec-23] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 20:50:53,804 760  [http-nio-8080-exec-23] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 20:50:54,150 1106 [http-nio-8080-exec-23] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 20:50:54,165 1121 [http-nio-8080-exec-23] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 21:30:43,157 0    [http-nio-8080-exec-40] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 21:30:43,188 31   [http-nio-8080-exec-40] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 21:30:43,188 31   [http-nio-8080-exec-40] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 21:30:43,188 31   [http-nio-8080-exec-40] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 21:30:43,242 85   [http-nio-8080-exec-40] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 21:30:43,242 85   [http-nio-8080-exec-40] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 21:30:43,320 163  [http-nio-8080-exec-40] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 21:30:43,518 361  [http-nio-8080-exec-40] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 21:30:43,518 361  [http-nio-8080-exec-40] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 21:30:43,518 361  [http-nio-8080-exec-40] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 21:30:43,518 361  [http-nio-8080-exec-40] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 21:30:43,534 377  [http-nio-8080-exec-40] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 21:30:43,866 709  [http-nio-8080-exec-40] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 21:30:44,220 1063 [http-nio-8080-exec-40] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 21:30:44,236 1079 [http-nio-8080-exec-40] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 21:33:08,214 0    [http-nio-8080-exec-45] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 21:33:08,229 15   [http-nio-8080-exec-45] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 21:33:08,245 31   [http-nio-8080-exec-45] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 21:33:08,245 31   [http-nio-8080-exec-45] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 21:33:08,299 85   [http-nio-8080-exec-45] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 21:33:08,299 85   [http-nio-8080-exec-45] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 21:33:08,383 169  [http-nio-8080-exec-45] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 21:33:08,561 347  [http-nio-8080-exec-45] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 21:33:08,580 366  [http-nio-8080-exec-45] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 21:33:08,580 366  [http-nio-8080-exec-45] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 21:33:08,580 366  [http-nio-8080-exec-45] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 21:33:08,582 368  [http-nio-8080-exec-45] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 21:33:08,898 684  [http-nio-8080-exec-45] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 21:33:09,231 1017 [http-nio-8080-exec-45] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 21:33:09,246 1032 [http-nio-8080-exec-45] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 21:34:14,265 0    [http-nio-8080-exec-48] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 21:34:14,281 16   [http-nio-8080-exec-48] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 21:34:14,281 16   [http-nio-8080-exec-48] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 21:34:14,281 16   [http-nio-8080-exec-48] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 21:34:14,344 79   [http-nio-8080-exec-48] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 21:34:14,345 80   [http-nio-8080-exec-48] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 21:34:14,428 163  [http-nio-8080-exec-48] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 21:34:14,644 379  [http-nio-8080-exec-48] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 21:34:14,649 384  [http-nio-8080-exec-48] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 21:34:14,649 384  [http-nio-8080-exec-48] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 21:34:14,649 384  [http-nio-8080-exec-48] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 21:34:14,649 384  [http-nio-8080-exec-48] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 21:34:15,050 785  [http-nio-8080-exec-48] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 21:34:15,467 1202 [http-nio-8080-exec-48] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 21:34:15,482 1217 [http-nio-8080-exec-48] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 21:37:59,039 0    [http-nio-8080-exec-68] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 21:37:59,057 18   [http-nio-8080-exec-68] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 21:37:59,061 22   [http-nio-8080-exec-68] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 21:37:59,061 22   [http-nio-8080-exec-68] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 21:37:59,108 69   [http-nio-8080-exec-68] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 21:37:59,108 69   [http-nio-8080-exec-68] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 21:37:59,208 169  [http-nio-8080-exec-68] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 21:37:59,409 370  [http-nio-8080-exec-68] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 21:37:59,424 385  [http-nio-8080-exec-68] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 21:37:59,424 385  [http-nio-8080-exec-68] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 21:37:59,424 385  [http-nio-8080-exec-68] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 21:37:59,424 385  [http-nio-8080-exec-68] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 21:37:59,740 701  [http-nio-8080-exec-68] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 21:38:00,078 1039 [http-nio-8080-exec-68] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 21:38:00,093 1054 [http-nio-8080-exec-68] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 22:52:32,288 0    [http-nio-8080-exec-95] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 22:52:32,304 16   [http-nio-8080-exec-95] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 22:52:32,304 16   [http-nio-8080-exec-95] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 22:52:32,304 16   [http-nio-8080-exec-95] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 22:52:32,387 99   [http-nio-8080-exec-95] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 22:52:32,387 99   [http-nio-8080-exec-95] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 22:52:32,489 201  [http-nio-8080-exec-95] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 22:52:32,736 448  [http-nio-8080-exec-95] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 22:52:32,752 464  [http-nio-8080-exec-95] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 22:52:32,752 464  [http-nio-8080-exec-95] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 22:52:32,752 464  [http-nio-8080-exec-95] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 22:52:32,752 464  [http-nio-8080-exec-95] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 22:52:33,120 832  [http-nio-8080-exec-95] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 22:52:33,521 1233 [http-nio-8080-exec-95] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 22:52:33,537 1249 [http-nio-8080-exec-95] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 23:00:12,332 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 23:00:12,348 16   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 23:00:12,348 16   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 23:00:12,348 16   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 23:00:12,416 84   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 23:00:12,416 84   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 23:00:12,516 184  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 23:00:12,779 447  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 23:00:12,795 463  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 23:00:12,795 463  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 23:00:12,795 463  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 23:00:12,795 463  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 23:00:13,164 832  [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 23:00:13,765 1433 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 23:00:13,780 1448 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 23:02:22,226 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 23:02:22,258 32   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 23:02:22,258 32   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 23:02:22,273 47   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 23:02:22,358 132  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 23:02:22,358 132  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 23:02:22,474 248  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 23:02:22,759 533  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 23:02:22,774 548  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 23:02:22,774 548  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 23:02:22,774 548  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 23:02:22,774 548  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 23:02:23,158 932  [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 23:02:23,723 1497 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 23:02:23,728 1502 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 23:09:36,008 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 23:09:36,039 31   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 23:09:36,039 31   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 23:09:36,039 31   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 23:09:36,108 100  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 23:09:36,108 100  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 23:09:36,261 253  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 23:09:36,594 586  [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 23:09:36,610 602  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 23:09:36,610 602  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 23:09:36,610 602  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 23:09:36,610 602  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 23:09:37,042 1034 [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 23:09:37,495 1487 [http-nio-8080-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 23:09:37,511 1503 [http-nio-8080-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 23:11:08,467 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 23:11:08,482 15   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 23:11:08,498 31   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 23:11:08,498 31   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 23:11:08,567 100  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 23:11:08,567 100  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 23:11:08,698 231  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 23:11:08,983 516  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 23:11:08,999 532  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 23:11:08,999 532  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 23:11:08,999 532  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 23:11:08,999 532  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 23:11:09,384 917  [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 23:11:09,884 1417 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 23:11:10,053 1586 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 23:37:58,889 0    [http-nio-8080-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 23:37:58,911 22   [http-nio-8080-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 23:37:58,911 22   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 23:37:58,927 38   [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 23:37:58,990 101  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 23:37:58,990 101  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 23:37:59,089 200  [http-nio-8080-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 23:37:59,327 438  [http-nio-8080-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 23:37:59,327 438  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 23:37:59,327 438  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 23:37:59,327 438  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 23:37:59,327 438  [http-nio-8080-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 23:37:59,712 823  [http-nio-8080-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 23:38:00,360 1471 [http-nio-8080-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 23:38:00,375 1486 [http-nio-8080-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-14 23:42:06,551 0    [http-nio-8080-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-14 23:42:06,573 22   [http-nio-8080-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-10-14 23:42:06,588 37   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-10-14 23:42:06,588 37   [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-10-14 23:42:06,667 116  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-14 23:42:06,667 116  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-14 23:42:06,773 222  [http-nio-8080-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-10-14 23:42:07,036 485  [http-nio-8080-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-14 23:42:07,052 501  [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/visitorcheckinappdb]
+2017-10-14 23:42:07,052 501  [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-10-14 23:42:07,052 501  [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-10-14 23:42:07,052 501  [http-nio-8080-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-14 23:42:07,405 854  [http-nio-8080-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-14 23:42:07,737 1186 [http-nio-8080-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-14 23:42:07,737 1186 [http-nio-8080-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory

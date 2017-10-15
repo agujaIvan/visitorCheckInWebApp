@@ -1,7 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.UsertableEntity;
-import edu.matc.persistence.GenderHibernateDao;
+import edu.matc.persistence.UserHibernateDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,12 +25,31 @@ public class LoginServlet extends HttpServlet {
         String url = null;
 
 
-        GenderHibernateDao listOfUser = new GenderHibernateDao();
+        UserHibernateDao listOfUser = new UserHibernateDao();
         List<UsertableEntity> userList = new ArrayList<>();
         userList = listOfUser.getUserByNameAndPassword(userName, userPassword);
 
+
+
         if (userList.size() == 1){
-            url = "jsp/chooseSection.jsp";
+            // creating the session
+            //HttpSession session = request.getSession();
+
+            UsertableEntity currentUser = new UsertableEntity();
+            currentUser = userList.get(0);
+
+            if (currentUser.getUserRole().equals("administrator")) {
+                url = "jsp/administrator.jsp";
+            } else if (currentUser.getUserRole().equals("dancer")) {
+                url = "jsp/chooseSection.jsp";
+            }
+
+            /*
+            //adding the user to the session
+            session.setAttribute("user", currentUser);*/
+            SessionInfo session = new SessionInfo("user", currentUser, request);
+            //session.updateOrCreateSession();
+
             // Redirect the flow
             response.sendRedirect(url);
         } else {

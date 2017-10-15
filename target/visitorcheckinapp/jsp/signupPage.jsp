@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="modal">
-    <form id="signup" action="createUserServlet" method="post" >
+    <form id="signup" action="userServlet" method="post" >
         <h1>SIGN UP</h1>
         <div class="container divPhoto">
             <img src="images/img_user.png" />
@@ -36,7 +36,7 @@
             </select>
         </div>
         <div id="botones">
-            <button type="submit" id="btnCreate">Create</button>
+            <button type="submit" id="btnCreate" name="submit" value="signup">Create</button>
             <button type="button" id="btnCancel">Cancel</button>
         </div>
     </form>
