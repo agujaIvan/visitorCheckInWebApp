@@ -38,7 +38,7 @@ will be.
 * Service/API
   * Wheather API 
 * CSS Framework
-  * W3.CSS 
+  * Bootstrap 
 
 ### Individual Research Topic 
 
@@ -53,4 +53,4 @@ will be.
 ### [Project Plan](ProjectPlan.md)
 
 ### [Time Log](TimeLog.md) 
-### [Journal](Journal.md)
+

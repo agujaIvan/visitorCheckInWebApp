@@ -32,26 +32,20 @@ more detail.
 
 ### Week 4
 - [ ] Add Hibernate config
-- [ ] Create DAO for user crud
-- [ ] Add unit tests for DAO
-- [ ] Add user login  
-- [ ] Add user registration
-- [ ] Time log entries
-- [ ] Add Maven for building
-- [ ] Add entities for remaining tables
 
 ### Week 5
-
-- [ ] Time log entries
+- [ ] Create DAO for user crud
+- [ ] Add unit tests for DAO
 
 ### Week 6
-- [ ] Time log entries
+- [ ] Add user login
 
 ### Week 7
-- [ ] Time log entries
+- [ ] Add user registration
 
 ### Week 8
-- [ ] Time log entries
+- [ ] Add Maven for building
+- [ ] Add entities for remaining tables
 
 ### Week 9
 - [ ] Time log entries
