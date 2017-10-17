@@ -25,3 +25,10 @@
 | 10/07/17 | working on the index and signup page to save user to database | 7 | |
 | 10/08/17 | struggling on the authentication process for my project | 2 | |
 | 10/04/17 | finiliizing the exercise for week 6 | 2 | |
+| 10/07/17 | working on the index and Signup page to save data into database | 7 | |
+| 10/08/17 | working o the authentication process | 2 | |
+| 10/09/17 | fixing some issues on exercise for week 6 authentication | 1 | |
+| 10/10/17 | working on the login page | 5 | |
+| 10/11/17 | working on the administrator page and watching videos for week 7 | 5 | |
+| 10/14/17 | working on the edit user profile page | 6 | |
+| 10/15/17 | working on the edit user page | 3 | |
