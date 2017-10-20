@@ -4,7 +4,6 @@ edu\matc\entity\ClassTable.class
 edu\matc\controller\SessionInfo.class
 edu\matc\controller\UserServlet.class
 edu\matc\utility\LocalDateAttributeConverter.class
-edu\matc\controller\EditUserServlet.class
 edu\matc\persistence\UserHibernateDao.class
 edu\matc\controller\Signup.class
 edu\matc\entity\GendertableEntity.class

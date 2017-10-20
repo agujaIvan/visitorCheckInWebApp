@@ -40,7 +40,8 @@
   
 <div class="container">
   <h3>Administrator web page</h3>
-  <p>this page just the administrador will be able to see it</p>
+
+  <p>${message}</p>
 </div>
 
 </body>

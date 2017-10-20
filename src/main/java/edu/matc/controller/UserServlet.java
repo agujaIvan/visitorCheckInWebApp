@@ -62,6 +62,25 @@ public class UserServlet extends HttpServlet {
 
                 //updating the user in the session
                 session.setAttribute("user", userInfo);
+                session.setAttribute("message", "info was successfully updated");
+
+                /*String sessionIsAdded;
+                sessionIsAdded =
+                        (String)session.getAttribute("isAdded");
+
+                if (sessionIsAdded == null || sessionIsAdded.equals("")) {
+
+                    // sessionCounter = 1;
+                    session.setAttribute("message", "");
+                } else {
+
+                    // sessionCounter++;
+                    session.setAttribute("message", "info was successfully updated");
+                    session.removeAttribute("isAdded");
+                }*/
+
+
+
                 url = "jsp/administrator.jsp";
             }
 

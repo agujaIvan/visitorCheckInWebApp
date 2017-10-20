@@ -23,6 +23,7 @@ public class LoginServlet extends HttpServlet {
         String userName = request.getParameter("userName");
         String userPassword = request.getParameter("userPassword");
         String url = null;
+        HttpSession session = request.getSession();
 
 
         UserHibernateDao listOfUser = new UserHibernateDao();
@@ -32,8 +33,6 @@ public class LoginServlet extends HttpServlet {
 
 
         if (userList.size() == 1){
-            // creating the session
-            //HttpSession session = request.getSession();
 
             UsertableEntity currentUser = new UsertableEntity();
             currentUser = userList.get(0);
@@ -44,15 +43,14 @@ public class LoginServlet extends HttpServlet {
                 url = "jsp/chooseSection.jsp";
             }
 
-            /*
+
             //adding the user to the session
-            session.setAttribute("user", currentUser);*/
-            SessionInfo session = new SessionInfo("user", currentUser, request);
-            //session.updateOrCreateSession();
+            session.setAttribute("user", currentUser);
 
             // Redirect the flow
             response.sendRedirect(url);
         } else {
+            session.setAttribute("notFound", "user wasnt found, try it again");
             //url = "HomePageServlet";
             doGet(request, response);
         }

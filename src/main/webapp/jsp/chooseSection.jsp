@@ -12,5 +12,7 @@
 </head>
 <body>
     <h2>The user has been logged in</h2>
+    <p>This page is under construction</p>
+    <span><a href="../index.jsp">Home page</a></span>
 </body>
 </html>

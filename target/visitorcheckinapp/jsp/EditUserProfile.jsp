@@ -31,6 +31,7 @@
             <input type="password" placeholder="your password" id="txtPassword" name="password" value="${user.userPassword}" />
             <p class="labels2">Confirm Password</p>
             <input type="password" placeholder="confirm password" id="txtCpassword" />
+
         </div>
         <button type="submit" id="btnSave" name="submit" value="editUser">Save</button>
         <button type="button" id="btnCancel">Cancel</button>
