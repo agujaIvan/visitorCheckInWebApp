@@ -43,12 +43,11 @@
             <select id="genderList" name="gender">
                 <option value="1" selected>Male</option>
                 <option value="2">Female</option>
-                <option value="no-comment">No comment</option>
             </select>
         </div>
         <div id="botones">
             <button type="submit" id="btnCreate" name="submit" value="signup">Create</button>
-            <button type="button" id="btnCancel">Cancel</button>
+            <button type="button" id="btnCancel"><a href="index.jsp">Cancel</a></button>
         </div>
     </form>
 </div>

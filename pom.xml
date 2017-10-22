@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.matc.visitorcheckinapp</groupId>
   <artifactId>visitorcheckinapp</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>visitorcheckinapp Maven Webapp</name>
   <url>http://maven.apache.org</url>

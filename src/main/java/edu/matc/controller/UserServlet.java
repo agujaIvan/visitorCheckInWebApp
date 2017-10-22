@@ -31,20 +31,31 @@ public class UserServlet extends HttpServlet {
             String email = req.getParameter("email");
             String password = req.getParameter("password");
 
-
-
             if (req.getParameter("submit").equals("signup")) {
-                LocalDate currentDate = LocalDate.now();
 
+                saveUser(req, resp, email, firstName, lastName, password, "dancer", user);
+                /*String password = req.getParameter("password");
                 String userName = req.getParameter("userName");
                 int gender = Integer.parseInt(req.getParameter("gender"));
                 String role = "dancer";
 
                 user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
                         gender, role);
-
+                    */
                 url = "jsp/result.jsp";
+            } else if (req.getParameter("submit").equals("addUserSave")) {
+                HttpSession session = req.getSession();
+                String role = req.getParameter("typeOfUser");
+
+                saveUser(req, resp, email, firstName, lastName, password, role, user);
+                /*user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
+                        gender, role);*/
+                //updating the user in the session
+                session.setAttribute("message", "user was successfully added");
+
+                url = "jsp/administrator.jsp";
             } else if (req.getParameter("submit").equals("editUser")) {
+
 
                 //getting the user from the session
                 HttpSession session = req.getSession();
@@ -64,27 +75,22 @@ public class UserServlet extends HttpServlet {
                 session.setAttribute("user", userInfo);
                 session.setAttribute("message", "info was successfully updated");
 
-                /*String sessionIsAdded;
-                sessionIsAdded =
-                        (String)session.getAttribute("isAdded");
-
-                if (sessionIsAdded == null || sessionIsAdded.equals("")) {
-
-                    // sessionCounter = 1;
-                    session.setAttribute("message", "");
-                } else {
-
-                    // sessionCounter++;
-                    session.setAttribute("message", "info was successfully updated");
-                    session.removeAttribute("isAdded");
-                }*/
-
-
-
                 url = "jsp/administrator.jsp";
             }
+
 
             resp.sendRedirect(url);
 
         }
+
+    private void saveUser(HttpServletRequest req, HttpServletResponse resp, String email, String firstName,
+                          String lastName, String password, String role, UserHibernateDao user) {
+
+        String userName = req.getParameter("userName");
+        LocalDate currentDate = LocalDate.now();
+        int gender = Integer.parseInt(req.getParameter("gender"));
+
+        user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
+                gender, role);
+    }
 }
