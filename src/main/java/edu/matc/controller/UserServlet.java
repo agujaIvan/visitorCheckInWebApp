@@ -8,10 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import edu.matc.entity.UsertableEntity;
-import edu.matc.persistence.UserHibernateDao;
+import edu.matc.entity.ibatis.UserTable;
+import edu.matc.persistence.HibernateDao;
+import edu.matc.persistence.IbatisJava;
 import org.apache.log4j.Logger;
 
 @WebServlet(
@@ -23,8 +26,9 @@ public class UserServlet extends HttpServlet {
         @Override
         protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-            UserHibernateDao user = new UserHibernateDao();
+            HibernateDao user = new HibernateDao();
             String url = null;
+            SessionInfo sessionInfo = new SessionInfo(req);
 
             String firstName = req.getParameter("firstName");
             String lastName = req.getParameter("lastName");
@@ -32,8 +36,21 @@ public class UserServlet extends HttpServlet {
             String password = req.getParameter("password");
 
             if (req.getParameter("submit").equals("signup")) {
+                String userName = req.getParameter("userName");
+                String gender = req.getParameter("gender");
+                LocalDate currentDate = LocalDate.now();
+                UserTable userTable = new UserTable();
+                IbatisJava ibatisJava = new IbatisJava();
 
-                saveUser(req, resp, email, firstName, lastName, password, "dancer", user);
+                userTable = createUser(Integer.parseInt(gender), 1, userName, password, email, firstName, lastName,
+                        Date.valueOf(currentDate), "");
+                userTable.setUserRole("dancer");
+                ibatisJava.addRecord("User.addNewRecord", userTable);
+
+
+                //TODO add the message to save the user into the database
+
+                //saveUser(req, resp, email, firstName, lastName, password, "dancer", user);
                 /*String password = req.getParameter("password");
                 String userName = req.getParameter("userName");
                 int gender = Integer.parseInt(req.getParameter("gender"));
@@ -58,9 +75,8 @@ public class UserServlet extends HttpServlet {
 
 
                 //getting the user from the session
-                HttpSession session = req.getSession();
                 UsertableEntity userInfo =
-                        (UsertableEntity) session.getAttribute("user");
+                        (UsertableEntity) sessionInfo.getAttribute("user");
 
                 //updating the info of the user
                 userInfo.setUserFirstName(firstName);
@@ -72,10 +88,13 @@ public class UserServlet extends HttpServlet {
                 user.updateUser(userInfo);
 
                 //updating the user in the session
-                session.setAttribute("user", userInfo);
-                session.setAttribute("message", "info was successfully updated");
+                sessionInfo.createAttribute("user", userInfo);
+                sessionInfo.createAttribute("message", "info was successfully updated");
 
                 url = "jsp/administrator.jsp";
+            } else if (req.getParameter("submit").equals("cancel")) {
+                url = "jsp/administrator.jsp";
+                sessionInfo.removeAttribute("message");
             }
 
 
@@ -84,7 +103,7 @@ public class UserServlet extends HttpServlet {
         }
 
     private void saveUser(HttpServletRequest req, HttpServletResponse resp, String email, String firstName,
-                          String lastName, String password, String role, UserHibernateDao user) {
+                          String lastName, String password, String role, HibernateDao user) {
 
         String userName = req.getParameter("userName");
         LocalDate currentDate = LocalDate.now();
@@ -92,5 +111,14 @@ public class UserServlet extends HttpServlet {
 
         user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
                 gender, role);
+    }
+
+    //TODO this method to create the user
+    private UserTable createUser(int idGender, int idStatusTable, String userName, String userPassword, String userEmail,
+                               String userFirstName, String userLastName, Date userDate, String userPhoto){
+
+            UserTable userTable = new UserTable(idGender, idStatusTable, userName, userPassword, userEmail, userFirstName,
+                                    userLastName, userDate, userPhoto);
+            return userTable;
     }
 }

@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 
+
 import edu.matc.entity.UsertableEntity;
 import edu.matc.entity.GendertableEntity;
 import org.apache.log4j.Logger;
@@ -13,37 +14,32 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserHibernateDao {
+public class HibernateDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
     Session session = null;
     Transaction tx = null;
 
-    public UserHibernateDao(){}
+    public HibernateDao(){}
 
     /**
-     * Add new item or record to the status table
+     * Add new item or record to the a table
      */
-    public boolean addNewRecord(String genderName) {
+    public void addNewRecord(Object object) {
 
-        boolean operationStatus = false;
         try {
             session = SessionFactoryProvider.getSessionFactory().openSession();
             tx = session.beginTransaction();
-            GendertableEntity gender = new GendertableEntity();
-            gender.setGenderName(genderName);
-            session.save(gender);
+            session.save(object);
             tx.commit();
-            operationStatus = true;
         } catch (HibernateException he) {
             if (tx != null) tx.rollback();
-            log.info("Error adding new record for GenderTable", he);
+            log.info("Error adding new record for " + object.getClass(), he);
         } finally {
             if (session != null) {
                 session.close();
             }
         }
-        return operationStatus;
     }
 
     public void addNewUser(LocalDate dancerDate, String dancerEmail, String firstName,
@@ -139,5 +135,52 @@ public class UserHibernateDao {
         }
     }
 
+    public List getAllRecords(Object object) {
+        List items = new ArrayList<>();
+        Session session = null;
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            items = session.createCriteria(object.getClass()).list();
+        } catch (HibernateException he) {
+            log.error("Error getting all record from " + object.getClass(), he);
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return items;
+    }
+
+    /* Method to get entitty by ID */
+    public Object getById(Object entity, int id ){
+        Session session = null;
+        Transaction tx = null;
+        Object currentEntity = null;
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            tx = session.beginTransaction();
+            currentEntity = session.get(entity.getClass(), id);
+
+
+            /*Status status =
+                    (Status) session.get(Status.class, itemId);
+            status.setStatusName(statusName);*/
+            //session.update(user);
+            //tx.commit();
+
+
+        } catch (HibernateException he) {
+            if (tx != null) tx.rollback();
+            log.info("Error updating user profile", he);
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+        return currentEntity;
+    }
+
 
 }
+

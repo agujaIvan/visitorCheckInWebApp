@@ -1,7 +1,7 @@
 package edu.matc.persistence;
 
 public class GenderHibernateDaoTest {
-    UserHibernateDao gender = new UserHibernateDao();
+    HibernateDao gender = new HibernateDao();
 /*
 
     @Test

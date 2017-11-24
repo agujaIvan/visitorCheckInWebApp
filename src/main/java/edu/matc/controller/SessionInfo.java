@@ -6,19 +6,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 public class SessionInfo {
+    HttpSession session;
 
+    public SessionInfo(HttpServletRequest req) {
+        session = req.getSession();
 
-    public SessionInfo(String attributeName, Object object, HttpServletRequest req) {
-        HttpSession session = req.getSession();
-        //adding the user to the session
+    }
+
+    public void createAttribute(String attributeName, Object object){
+        //adding the attribute to the session
         session.setAttribute(attributeName, object);
     }
 
-    /*public  void updateOrCreateSession(String attributeName, Object object, HttpServletRequest req) {
+    public Object getAttribute(String attributeName) {
+        return session.getAttribute(attributeName);
+    }
 
-        HttpSession session = req.getSession();
-                //adding the user to the session
-                session.setAttribute(attributeName, object);
-    }*/
+    public  void removeAttribute(String attributeName) {
+        session.removeAttribute(attributeName);
+    }
+
+    public void destroySession(){
+        session.invalidate();
+    }
 
 }

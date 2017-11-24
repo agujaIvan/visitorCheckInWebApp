@@ -19,7 +19,7 @@
             <div class="dropdown-menu myDropdownMenu ">
                 <a class="dropdown-item" href="EditUserProfile.jsp">Edit profile</a>
                 <a class="dropdown-item" href="AddUser.jsp">Add user</a>
-                <a class="dropdown-item" href="#">Add class</a>
+                <a class="dropdown-item" href="../CreateLessonServlet">Create class</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="administrator.jsp">Administrator</a>
             </div>

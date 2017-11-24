@@ -1,15 +1,14 @@
 package edu.matc.controller;
 
-import edu.matc.entity.UsertableEntity;
-import edu.matc.persistence.UserHibernateDao;
+import edu.matc.entity.ibatis.ClassTable;
+import edu.matc.entity.ibatis.UserTable;
+import edu.matc.persistence.IbatisJava;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,48 +22,62 @@ public class LoginServlet extends HttpServlet {
         String userName = request.getParameter("userName");
         String userPassword = request.getParameter("userPassword");
         String url = null;
-        HttpSession session = request.getSession();
+        SessionInfo sessionInfo = new SessionInfo(request);
 
 
-        UserHibernateDao listOfUser = new UserHibernateDao();
-        List<UsertableEntity> userList = new ArrayList<>();
-        userList = listOfUser.getUserByNameAndPassword(userName, userPassword);
+        IbatisJava ibatisJava = new IbatisJava();
+        List<UserTable> userTableList = new ArrayList<>();
+        userTableList = ibatisJava.getUserByIdAndPassword(userName, userPassword);
 
+        if (userTableList.size() == 1){
 
-
-        if (userList.size() == 1){
-
-            UsertableEntity currentUser = new UsertableEntity();
-            currentUser = userList.get(0);
+            UserTable currentUser = new UserTable();
+            currentUser = userTableList.get(0);
 
             if (currentUser.getUserRole().equals("administrator")) {
                 url = "jsp/administrator.jsp";
+
+                sessionInfo.removeAttribute("message");
+
             } else if (currentUser.getUserRole().equals("dancer")) {
+                //pulling up data from class table
+
+                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleTable");
+                sessionInfo.createAttribute("listOfClasses", listOfClasses);
+
                 url = "jsp/chooseSection.jsp";
             }
 
-
             //adding the user to the session
-            session.setAttribute("user", currentUser);
+            sessionInfo.createAttribute("user", currentUser);
 
             // Redirect the flow
-            response.sendRedirect(url);
+            //response.sendRedirect(url);
+            //request.getRequestDispatcher(url).forward(request, response);
         } else {
-            session.setAttribute("notFound", "user wasnt found, try it again");
-            //url = "HomePageServlet";
-            doGet(request, response);
+            sessionInfo.createAttribute("notFound", "user wasnt found, try it again");
+
+            url = "jsp/login.jsp";
+            //doGet(request, response);
         }
+
+        /*RequestDispatcher dispatcher =
+                getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(request, response);*/
+
+        //request.getRequestDispatcher(url).forward(request, response);
+        response.sendRedirect(url);
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
 
-        String url = "/jsp/login.jsp";
+        /*String url = "/jsp/login.jsp";
 
         RequestDispatcher dispatcher =
                 getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);
+        dispatcher.forward(request, response);*/
     }
 
 }

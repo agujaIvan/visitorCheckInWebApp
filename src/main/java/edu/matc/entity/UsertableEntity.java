@@ -150,7 +150,7 @@ public class UsertableEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "genderTable_idGenderTable", referencedColumnName = "idGenderTable", nullable = false)
+    @JoinColumn(name = "idGenderTable", referencedColumnName = "idGenderTable", nullable = false)
     public GendertableEntity getGendertableByGenderTableIdGenderTable() {
         return gendertableByGenderTableIdGenderTable;
     }

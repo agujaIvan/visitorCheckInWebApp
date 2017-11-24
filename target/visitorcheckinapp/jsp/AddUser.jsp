@@ -40,7 +40,7 @@
                     <div class="form-group row">
                         <label for="userName" class="col-form-label col-md-2">User name</label>
                         <div class="col-md-8">
-                            <input type="text" id="userName" class="form-control" placeholder="User name"
+                            <input type="text" id ="userName" class="form-control" placeholder="User name"
                                    name="userName" required>
                         </div>
                     </div>

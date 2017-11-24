@@ -23,8 +23,11 @@ public class AddingStatus extends HttpServlet {
         } else {
             req.setAttribute("users", userDao.getAllUsers());
         }*/
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/result.jsp");
-        dispatcher.forward(req, resp);
+
+        //RequestDispatcher dispatcher = req.getRequestDispatcher("/result.jsp");
+        //dispatcher.forward(req, resp);
         // testing the git
+        String url = "/result.jsp";
+        resp.sendRedirect(url);
     }
 }

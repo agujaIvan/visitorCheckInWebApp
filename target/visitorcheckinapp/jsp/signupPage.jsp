@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -41,8 +42,9 @@
         <div class="container">
             <p class="left">Gender</p>
             <select id="genderList" name="gender">
-                <option value="1" selected>Male</option>
-                <option value="2">Female</option>
+                <c:forEach var="list" items="${listOfGender}">
+                <option value="${list.idGenderTable}" selected>${list.genderName}</option>
+                </c:forEach>
             </select>
         </div>
         <div id="botones">
