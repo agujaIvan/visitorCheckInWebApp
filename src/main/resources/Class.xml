@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Class">
+
+    <insert id="insert" parameterClass="edu.matc.entity.ibatis.ClassTable">
+        insert into classtable(idStyleTable, classStartDate, classEndDate, classStartTime, classEndTime, classDays)
+        values (#idStyleTable#, #classStartDate#, #classEndDate#, #classStartTime#, #classEndTime#, #classDays#)
+
+        <selectKey resultClass="int" keyProperty="idUserTable">
+            select last_insert_id() as idUserTable
+        </selectKey>
+    </insert>
+
+    <select id="getAll" resultClass="edu.matc.entity.ibatis.ClassTable">
+        SELECT * FROM classtable
+    </select>
+
+    <select id="getAllJoinStyleTable" resultClass="edu.matc.entity.ibatis.ClassTable">
+        select * from classtable as c join styletable as s where c.idStyleTable = s.idStyleTable
+    </select>
+</sqlMap>

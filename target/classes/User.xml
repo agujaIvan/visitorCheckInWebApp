@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="User">
+
+    <insert id="addNewRecord" parameterClass="edu.matc.entity.ibatis.UserTable">
+        insert into usertable(idGenderTable, idStatusTable, userName, userPassword, userEmail, userFirstName, userLastName,
+        userDate, userPhoto, userRole)
+        values (#idGenderTable#, #idStatusTable#, #userName#, #userPassword#, #userEmail#, #userFirstName#, #userLastName#, #userDate#,
+        #userPhoto#, #userRole#)
+
+        <selectKey resultClass="int" keyProperty="idUserTable">
+            select last_insert_id() as idUserTable
+        </selectKey>
+    </insert>
+
+    <select id="getAll" resultClass="edu.matc.entity.ibatis.UserTable">
+        SELECT * FROM usertable
+    </select>
+
+    <select id="getByIdAndPassword" resultClass="edu.matc.entity.ibatis.UserTable">
+        SELECT * FROM usertable WHERE userName = #userName# AND userPassword = #userPassword#
+    </select>
+
+    <select id="getAllTeachersAndAdmins" resultClass="edu.matc.entity.ibatis.UserTable">
+        SELECT * FROM usertable WHERE userRole = "teacher" OR userRole = "administrator"
+    </select>
+
+</sqlMap>
