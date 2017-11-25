@@ -31,4 +31,4 @@
 | 10/10/17 | working on the login page | 5 | |
 | 10/11/17 | working on the administrator page and watching videos for week 7 | 5 | |
 | 10/14/17 | working on the edit user profile page | 6 | |
-| 10/15/17 | working on the edit user page | 3 | |
+| 10/15/17 | working on the edit user pages | 3 | |
