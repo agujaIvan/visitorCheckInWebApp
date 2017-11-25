@@ -4,6 +4,7 @@ import edu.matc.entity.ibatis.ClassTable;
 import edu.matc.entity.ibatis.UserTable;
 import edu.matc.persistence.IbatisJava;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -65,8 +66,11 @@ public class LoginServlet extends HttpServlet {
                 getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);*/
 
+        //RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        //dispatcher.forward(request, response);
+
         //request.getRequestDispatcher(url).forward(request, response);
-        response.sendRedirect(url);
+        //response.sendRedirect(url);
 
     }
 

@@ -47,20 +47,11 @@ public class UserServlet extends HttpServlet {
                 userTable.setUserRole("dancer");
                 ibatisJava.addRecord("User.addNewRecord", userTable);
 
-
-                //TODO add the message to save the user into the database
-
-                //saveUser(req, resp, email, firstName, lastName, password, "dancer", user);
-                /*String password = req.getParameter("password");
-                String userName = req.getParameter("userName");
-                int gender = Integer.parseInt(req.getParameter("gender"));
-                String role = "dancer";
-
-                user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
-                        gender, role);
-                    */
                 url = "jsp/result.jsp";
+
             } else if (req.getParameter("submit").equals("addUserSave")) {
+                //TODO working on this to add the proper user for teachers using the admin page
+
                 HttpSession session = req.getSession();
                 String role = req.getParameter("typeOfUser");
 
