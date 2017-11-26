@@ -1,9 +1,7 @@
-edu\matc\persistence\IGenericDao.class
 edu\matc\entity\StyleEntity.class
 edu\matc\controller\HomePageServlet.class
 edu\matc\controller\SessionInfo.class
 edu\matc\controller\UserServlet.class
-edu\matc\persistence\AbstractHibernateDao.class
 edu\matc\entity\ClassEntity.class
 edu\matc\controller\StyleServlet.class
 edu\matc\entity\GendertableEntity.class
@@ -20,7 +18,6 @@ edu\matc\utility\LocalDateAttributeConverter.class
 edu\matc\controller\Signup.class
 edu\matc\entity\ibatis\UserTable.class
 edu\matc\entity\StyletableEntity.class
-edu\matc\persistence\GenericHibernateDao.class
 edu\matc\controller\StartupServlet.class
 edu\matc\entity\ibatis\StyleTable.class
 edu\matc\persistence\SessionFactoryProvider.class

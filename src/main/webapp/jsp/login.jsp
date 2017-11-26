@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="modal">
-        <form id="loginForm" action="loginServlet" method="post">
+        <form id="loginForm" action="${pageContext.request.contextPath}/loginServlet" method="post">
             <h3 style="color: red">${notFound}</h3>
             <h2>LOGIN</h2>
             <div class="container1">

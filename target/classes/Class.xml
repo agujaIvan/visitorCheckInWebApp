@@ -3,9 +3,9 @@
 
 <sqlMap namespace="Class">
 
-    <insert id="insert" parameterClass="edu.matc.entity.ibatis.ClassTable">
-        insert into classtable(idStyleTable, classStartDate, classEndDate, classStartTime, classEndTime, classDays)
-        values (#idStyleTable#, #classStartDate#, #classEndDate#, #classStartTime#, #classEndTime#, #classDays#)
+    <insert id="addNewRecord" parameterClass="edu.matc.entity.ibatis.ClassTable">
+        insert into classtable(idUserTable, idStyleTable, classStartDate, classEndDate, classStartTime, classEndTime, classDays)
+        values (#idUserTable#, #idStyleTable#, #classStartDate#, #classEndDate#, #classStartTime#, #classEndTime#, #classDays#)
 
         <selectKey resultClass="int" keyProperty="idUserTable">
             select last_insert_id() as idUserTable

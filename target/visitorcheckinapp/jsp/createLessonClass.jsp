@@ -1,35 +1,30 @@
 ﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>LESSON CLASS</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/LessonClassStyle.css" />
 
-</head>
+<c:set var="pageTitle" value="Create Lesson / Class" scope="session" />
+<c:import url="/jsp/head.jsp" />
 <body>
 
     <c:import url="/jsp/navBar.jsp" />
     <div class="container">
         <div class="mainDiv m-auto">
-            <form class="myForm mt-3" method="post" action="CreateLessonServlet">
+            <form class="myForm mt-3" method="post" action="${pageContext.request.contextPath}/CreateLessonServlet">
                 <div class="row m-auto">
                     <h2 class="text-center ml-auto mr-auto mt-4">LESSON CLASS</h2>
                     <div class="form-group form-inline m-auto p-4">
-                        <label for="optionSelect" class="col-form-label col-sm-2">User</label>
-                        <select class="custom-select col-sm-4" id="optionSelect">
+                        <label for="user" class="col-form-label col-sm-2">Teacher</label>
+                        <select class="custom-select col-sm-4" id="user" name="user">
                             <c:forEach var="users" items="${listOfUsers}">
-                            <option value="">${users.userFirstName}</option>
+                            <option value="${users.idUserTable}">${users.userFirstName} ${users.userLastName} </option>
                             </c:forEach>
 
                         </select>
-                        <label for="category" class="col-form-label col-sm-3">Category</label>
+                        <label for="category" class="col-form-label col-sm-3">Style</label>
                         <select class="custom-select col-sm-3" id="category" name="category">
 
                             <c:forEach var="styles" items="${listOfStyles}">
-                            <option value="${styles.id}">${styles.styleName}</option>
+                            <option value="${styles.idStyleTable}">${styles.styleName}</option>
                             </c:forEach>
 
                         </select>

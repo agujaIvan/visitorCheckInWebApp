@@ -18,7 +18,7 @@ public class UserTable {
     public UserTable(){}
 
     public UserTable(int idGender, int idStatusTable, String userName, String userPassword, String userEmail, String userFirstName,
-                     String userLastName, Date userDate, String userPhoto) {
+                     String userLastName, Date userDate, String userPhoto, String userRole) {
         this.idGenderTable = idGender;
         this.idStatusTable = idStatusTable;
         this.userName = userName;
@@ -28,6 +28,7 @@ public class UserTable {
         this.userLastName = userLastName;
         this.userDate = userDate;
         this.userPhoto = userPhoto;
+        this.userRole = userRole;
 
     }
 

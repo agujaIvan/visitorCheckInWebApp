@@ -7,7 +7,7 @@
         insert into styletable(styleName)
         values (#styleName#)
 
-        <selectKey resultClass="int" keyProperty="idUserTable">
+        <selectKey resultClass="int" keyProperty="idStyleTable">
             select last_insert_id() as idUserTable
         </selectKey>
     </insert>

@@ -19,15 +19,16 @@ public class HomePageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String url = null;
-        String contextPath = req.getContextPath();
+
         if (req.getParameter("submit").equals("registered")) {
             url = "jsp/login.jsp";
         } else if (req.getParameter("submit").equals("guest")) {
             url ="jsp/constructionGuest.jsp";
         }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-        dispatcher.forward(req, resp);
+        //RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+        //dispatcher.forward(req, resp);
+        req.getRequestDispatcher(url).forward(req, resp);
 
     }
 }

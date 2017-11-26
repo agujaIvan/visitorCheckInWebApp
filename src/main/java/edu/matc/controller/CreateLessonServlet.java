@@ -27,11 +27,12 @@ public class CreateLessonServlet extends HttpServlet {
         ClassTable classTable = new ClassTable();
         IbatisJava ibatisJava = new IbatisJava();
 
+        String user = request.getParameter("user");
         String category = request.getParameter("category");
         String startTime = request.getParameter("from");
         String endTime = request.getParameter("to");
-        String startDate = request.getParameter("startDate");
-        String endDate = request.getParameter("endDate");
+        String startDate = request.getParameter("classStartDate");
+        String endDate = request.getParameter("classEndDate");
 
         day[0] = request.getParameter("chkSun");
         day[1] = request.getParameter("chkMon");
@@ -53,6 +54,7 @@ public class CreateLessonServlet extends HttpServlet {
         startTime = startTime.concat(":00");
         endTime = endTime.concat(":00");
 
+        classTable.setIdUserTable(Integer.parseInt(user));
         classTable.setClassDays(selectedDay);
         classTable.setIdStyleTable(Integer.parseInt(category));
         classTable.setClassStartTime(Time.valueOf(startTime));
@@ -60,7 +62,7 @@ public class CreateLessonServlet extends HttpServlet {
         classTable.setClassStartDate(Date.valueOf(startDate));
         classTable.setClassEndDate(Date.valueOf(endDate));
 
-        ibatisJava.addRecord("Class.insert", classTable);
+        ibatisJava.addRecord("Class.addNewRecord", classTable);
         String url = "jsp/administrator.jsp";
         response.sendRedirect(url);
 

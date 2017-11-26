@@ -25,7 +25,7 @@ public class IbatisJava{
             rd = Resources.getResourceAsReader("SqlMapConfig.xml");
             smc = SqlMapClientBuilder.buildSqlMapClient(rd);
 
-            if (s.equals("Class.insert")) {
+            if (s.equals("Class.addNewRecord")) {
                 t = (ClassTable) t;
             } else if (s.equals("User.addNewRecord")){
                 t = (UserTable) t;

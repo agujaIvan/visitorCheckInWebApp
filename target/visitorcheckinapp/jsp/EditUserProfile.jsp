@@ -1,26 +1,22 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>EDIT USER PROFILE</title>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/AddUserStyle.css" />
-</head>
+
+<c:set var="pageTitle" value="Edit user profile" scope="session" />
+<c:import url="/jsp/head.jsp" />
+
 <body>
     <c:import url="/jsp/navBar.jsp" />
 
 
     <div class="container">
         <div class="mainDiv m-auto">
-            <form class="myForm" action="../userServlet" method="post">
+            <form class="myForm" action="${pageContext.request.contextPath}/userServlet" method="post">
                 <div class="myContainers text-center">
                     <div class="form-group">
                         <h2 class="p-4">EDIT USER PROFILE</h2>
                         <div class="">
-                            <img src="../images/img-photo2.png" alt="load photo" class="outside imgOut" />
+                            <img src="${pageContext.request.contextPath}/images/img-photo2.png" alt="load photo" class="outside imgOut" />
                         </div>
                         <label>
                             <a href="#" class="btn btn-default">Upload photo</a>

@@ -39,23 +39,30 @@ public class UserServlet extends HttpServlet {
                 String userName = req.getParameter("userName");
                 String gender = req.getParameter("gender");
                 LocalDate currentDate = LocalDate.now();
-                UserTable userTable = new UserTable();
-                IbatisJava ibatisJava = new IbatisJava();
 
-                userTable = createUser(Integer.parseInt(gender), 1, userName, password, email, firstName, lastName,
-                        Date.valueOf(currentDate), "");
-                userTable.setUserRole("dancer");
-                ibatisJava.addRecord("User.addNewRecord", userTable);
+
+                //creating and saving the user to the database
+                createAndStoreUser(Integer.parseInt(gender), 1, userName, password, email, firstName, lastName,
+                                    Date.valueOf(currentDate), "", "dancer");
 
                 url = "jsp/result.jsp";
 
-            } else if (req.getParameter("submit").equals("addUserSave")) {
+            } else if (req.getParameter("submit").equals("addUserByAdmin")) {
                 //TODO working on this to add the proper user for teachers using the admin page
 
                 HttpSession session = req.getSession();
                 String role = req.getParameter("typeOfUser");
+                String userName = req.getParameter("userName");
+                String gender = req.getParameter("gender");
+                LocalDate currentDate = LocalDate.now();
 
-                saveUser(req, resp, email, firstName, lastName, password, role, user);
+
+                //creating and saving the user to the database
+                createAndStoreUser(Integer.parseInt(gender), 1, userName, password, email, firstName, lastName,
+                        Date.valueOf(currentDate), "", role);
+
+
+                //saveUser(req, resp, email, firstName, lastName, password, role, user);
                 /*user.addNewUser(currentDate, email, firstName, lastName, password, "", userName,
                         gender, role);*/
                 //updating the user in the session
@@ -105,11 +112,16 @@ public class UserServlet extends HttpServlet {
     }
 
     //TODO this method to create the user
-    private UserTable createUser(int idGender, int idStatusTable, String userName, String userPassword, String userEmail,
-                               String userFirstName, String userLastName, Date userDate, String userPhoto){
+    private void createAndStoreUser(int idGender, int idStatusTable, String userName, String userPassword,
+                                    String userEmail, String userFirstName, String userLastName, Date userDate,
+                                    String userPhoto, String userRole){
 
-            UserTable userTable = new UserTable(idGender, idStatusTable, userName, userPassword, userEmail, userFirstName,
-                                    userLastName, userDate, userPhoto);
-            return userTable;
+            IbatisJava ibatisJava   = new IbatisJava();
+            UserTable userTable     = new UserTable(idGender, idStatusTable, userName, userPassword, userEmail,
+                                            userFirstName, userLastName, userDate, userPhoto, userRole);
+
+            ibatisJava.addRecord("User.addNewRecord", userTable);
     }
+
+
 }

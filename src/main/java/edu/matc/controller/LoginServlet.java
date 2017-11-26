@@ -5,6 +5,7 @@ import edu.matc.entity.ibatis.UserTable;
 import edu.matc.persistence.IbatisJava;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -68,20 +69,11 @@ public class LoginServlet extends HttpServlet {
 
         //RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         //dispatcher.forward(request, response);
-
-        //request.getRequestDispatcher(url).forward(request, response);
+        //String context = getServletContext().getContextPath();
+        request.getRequestDispatcher(url).forward(request, response);
         //response.sendRedirect(url);
 
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
-            IOException {
-
-        /*String url = "/jsp/login.jsp";
-
-        RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);*/
-    }
 
 }

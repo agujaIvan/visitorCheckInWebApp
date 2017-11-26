@@ -5,6 +5,7 @@ import java.sql.Time;
 
 public class ClassTable {
     private int idclassTable;
+    private int idUserTable;
     private int idStyleTable;
     private Date classStartDate;
     private Date classEndDate;
@@ -17,7 +18,8 @@ public class ClassTable {
 
     }
 
-    public ClassTable(int style_id, Date startDate, Date endDate, Time startTime, Time endTime, String days) {
+    public ClassTable(int idUserTable, int style_id, Date startDate, Date endDate, Time startTime, Time endTime, String days) {
+        this.idUserTable = idUserTable;
         this.idStyleTable = style_id;
         this.classStartDate = startDate;
         this.classEndDate = endDate;
@@ -26,13 +28,13 @@ public class ClassTable {
         this.classDays = days;
     }
 
-    /*public int getIdUserTable() {
-        return idclassTable;
+    public int getIdUserTable() {
+        return idUserTable;
     }
 
-    public void setIdUserTable(int idclassTable) {
-        this.idclassTable = idclassTable;
-    }*/
+    public void setIdUserTable(int idUserTable) {
+        this.idUserTable = idUserTable;
+    }
 
     public int getIdStyleTable() {
         return idStyleTable;
@@ -85,4 +87,6 @@ public class ClassTable {
     public String getStyleName() {
         return styleName;
     }
+
+
 }

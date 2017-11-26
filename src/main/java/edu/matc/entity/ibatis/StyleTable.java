@@ -1,7 +1,7 @@
 package edu.matc.entity.ibatis;
 
 public class StyleTable {
-    private int id;
+    private int idStyleTable;
     private String styleName;
 
     public StyleTable(){
@@ -9,16 +9,16 @@ public class StyleTable {
     }
 
     public StyleTable(int id, String styleName) {
-        this.id = id;
+        this.idStyleTable = id;
         this.styleName = styleName;
     }
 
-    public int getId() {
-        return id;
+    public int getIdStyleTable() {
+        return idStyleTable;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdStyleTable(int idStyleTable) {
+        this.idStyleTable = idStyleTable;
     }
 
     public String getStyleName() {

@@ -10,5 +10,6 @@
 
 
 
-    <link rel="stylesheet" href="../css/AddUserStyle.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/AddUserStyle.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/LessonClassStyle.css" />
 </head>
