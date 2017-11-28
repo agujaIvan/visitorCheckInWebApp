@@ -7,50 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19b7c9e8-7c79-43ef-8691-c04e02ea2553" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/AbstractHibernateDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericHibernateDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/IGenericDao.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/HomePageServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/HomePageServlet.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/persistence/AbstractHibernateDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/persistence/GenericHibernateDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/persistence/IGenericDao.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/LoginServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/UserServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/UserServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/ibatis/UserTable.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/ibatis/UserTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/ibatis/ClassTable.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/ibatis/ClassTable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp.war" afterPath="$PROJECT_DIR$/target/visitorcheckinapp.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/controller/HomePageServlet.class" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/controller/HomePageServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/controller/LoginServlet.class" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/controller/LoginServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/controller/UserServlet.class" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/controller/UserServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/entity/ibatis/UserTable.class" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/entity/ibatis/UserTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/entity/ibatis/ClassTable.class" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/edu/matc/entity/ibatis/ClassTable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyApplog.log" afterPath="$PROJECT_DIR$/MyApplog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/HomePageServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/HomePageServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/LoginServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/UserServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/StyleTable.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/StyleTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/UserTable.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/UserTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/IbatisJava.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/IbatisJava.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Class.xml" afterPath="$PROJECT_DIR$/src/main/resources/Class.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Style.xml" afterPath="$PROJECT_DIR$/src/main/resources/Style.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/AddUser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/AddUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/EditUserProfile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/EditUserProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/administrator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/administrator.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/createLessonClass.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/createLessonClass.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/navBar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/navBar.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/controller/TestingOut.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/controller/TestingOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/GenderHibernateDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/GenderHibernateDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/content-chooseSection.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/content-chooseSection.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Class.xml" afterPath="$PROJECT_DIR$/target/classes/Class.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.TestingOut.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.TestingOut.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.TestingOut.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.TestingOut.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/AddUser.jsp" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/AddUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/EditUserProfile.jsp" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/EditUserProfile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/administrator.jsp" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/administrator.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/head.jsp" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/navBar.jsp" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/navBar.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/Class.xml" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/WEB-INF/classes/Class.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/content-chooseSection.jsp" afterPath="$PROJECT_DIR$/target/visitorcheckinapp/jsp/content-chooseSection.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,6 +58,12 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="visitorcheckinappdb@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="visitorcheckinappdb" type="e3449647:DbNodeDescriptor" />
+        <item name="classtable" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="visitorcheckinappdb@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="visitorcheckinappdb" type="e3449647:DbNodeDescriptor" />
         <item name="styletable" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
@@ -99,109 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UserServlet.java">
+      <file leaf-file-name="content-classVisitors.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/content-classVisitors.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateLessonServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="60" column="58" lean-forward="true" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="classtable" pinned="false" current-in-tab="true">
-        <entry file="das://table:/220642ff/a2c5dcb1-7204-4f7d-b9a9-11e5b2ee1134/visitorcheckinappdb.classtable">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StyleTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/StyleTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Style.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Style.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding>
-                <marker date="1511670586052" expanded="true" signature="271:333" ph="insert into styletable... " />
-                <marker date="1511670586052" expanded="true" signature="412:450" ph="select last_... " />
-                <marker date="1511670586052" expanded="true" signature="568:592" ph="SELECT * FRO... styletable" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IbatisJava.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/IbatisJava.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Class.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding>
-                <marker date="1511669630006" expanded="true" signature="272:520" ph="insert into classtable... " />
-                <marker date="1511669630006" expanded="true" signature="598:636" ph="select last_... " />
-                <marker date="1511669630006" expanded="true" signature="754:778" ph="SELECT * FRO... classtable" />
-                <marker date="1511669630006" expanded="true" signature="889:977" ph="select * fro... classtable" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createLessonClass.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/createLessonClass.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="88">
+              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -215,8 +98,8 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="JUnit4 Test Class" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -244,11 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/StyleServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/EditUserProfile1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/SessionInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/LessonClassStyle.css" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/UserHibernateDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/controller/CreateLessonServletTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/StyleEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/ClassEntity.java" />
@@ -275,7 +153,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/MyApplog.log" />
         <option value="$PROJECT_DIR$/src/main/resources/User.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/navBar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/EditUserProfile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/administrator.jsp" />
@@ -283,18 +160,24 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/UserTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/content-chooseSection.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/HomePageServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/controller/TestingOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/GenderHibernateDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Class.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/IbatisJava.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/createLessonClass.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/Style.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/StyleTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/SectionDetailsServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/content-sectionDetails.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/SectionDetails.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Class.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/content-chooseSection.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/ClassVisitorsServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/content-classVisitors.jsp" />
       </list>
     </option>
   </component>
@@ -375,18 +258,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="visitorCheckInWebApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="visitorCheckInWebApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="visitorCheckInWebApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="visitorCheckInWebApp" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="visitorCheckInWebApp" type="b2602c69:ProjectViewProjectNode" />
@@ -490,9 +370,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -946,6 +824,8 @@
       <workItem from="1511578828396" duration="1428000" />
       <workItem from="1511585934435" duration="52000" />
       <workItem from="1511645706331" duration="16149000" />
+      <workItem from="1511715876885" duration="4784000" />
+      <workItem from="1511827242590" duration="5879000" />
     </task>
     <servers />
   </component>
@@ -982,7 +862,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342955000" />
+    <option name="totallyTimeSpent" value="353618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -994,7 +874,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1004,26 +884,26 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18463181" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12954545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.49356914" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21600877" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45285088" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.095" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23355263" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27854857" sideWeight="0.45588234" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20917822" sideWeight="0.5441176" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.6041667" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17697228" sideWeight="0.33933517" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32456142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878788" sideWeight="0.39583334" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32333332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27854857" sideWeight="0.45530728" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1081,24 +961,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="48" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1128,27 +994,6 @@
     <option name="serverIp" value="localhost" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jQuery.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/AddUserStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/EditUserProfile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2268">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/HomePageStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-574">
@@ -1283,14 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/content-chooseSection.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/navBar.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1313,30 +1150,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/AbstractHibernateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericHibernateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/IGenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/AbstractHibernateDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/GenericHibernateDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/IGenericDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/Database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1353,14 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/chooseSection.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddingStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -1373,14 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1437,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1445,7 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,32 +1251,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Class.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <marker date="1511669630006" expanded="true" signature="272:520" ph="insert into classtable... " />
-            <marker date="1511669630006" expanded="true" signature="598:636" ph="select last_... " />
-            <marker date="1511669630006" expanded="true" signature="754:778" ph="SELECT * FRO... classtable" />
-            <marker date="1511669630006" expanded="true" signature="889:977" ph="select * fro... classtable" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1506,22 +1278,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/createLessonClass.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Style.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <marker date="1511670586052" expanded="true" signature="271:333" ph="insert into styletable... " />
-            <marker date="1511670586052" expanded="true" signature="412:450" ph="select last_... " />
-            <marker date="1511670586052" expanded="true" signature="568:592" ph="SELECT * FRO... styletable" />
+            <marker date="1511671441111" expanded="true" signature="271:333" ph="insert into styletable... " />
+            <marker date="1511671441111" expanded="true" signature="412:450" ph="select last_... " />
+            <marker date="1511671441111" expanded="true" signature="568:592" ph="SELECT * FRO... styletable" />
           </folding>
         </state>
       </provider>
@@ -1531,18 +1295,41 @@
         <state relative-caret-position="154">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#399#400#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java">
+    <entry file="das://table:/220642ff/a2c5dcb1-7204-4f7d-b9a9-11e5b2ee1134/visitorcheckinappdb.classtable">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/ClassVisitors.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="60" column="58" lean-forward="true" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+        <state relative-caret-position="88">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/createLessonClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/chooseSection.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1554,10 +1341,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/220642ff/a2c5dcb1-7204-4f7d-b9a9-11e5b2ee1134/visitorcheckinappdb.classtable">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Class.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="94" lean-forward="true" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+          <folding>
+            <marker date="1511830704812" expanded="true" signature="272:520" ph="insert into classtable... " />
+            <marker date="1511830704812" expanded="true" signature="599:637" ph="select last_... " />
+            <marker date="1511830704812" expanded="true" signature="755:779" ph="SELECT * FRO... classtable" />
+            <marker date="1511830704812" expanded="true" signature="890:978" ph="select * fro... classtable" />
+            <marker date="1511830704812" expanded="true" signature="1097:1408" ph="select c.idc... classtable" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/ibatis/ClassTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/content-chooseSection.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="29" column="129" lean-forward="true" selection-start-line="29" selection-start-column="129" selection-end-line="29" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/CreateLessonServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="60" column="58" lean-forward="false" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/ClassVisitorsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/content-classVisitors.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@
         insert into classtable(idUserTable, idStyleTable, classStartDate, classEndDate, classStartTime, classEndTime, classDays)
         values (#idUserTable#, #idStyleTable#, #classStartDate#, #classEndDate#, #classStartTime#, #classEndTime#, #classDays#)
 
-        <selectKey resultClass="int" keyProperty="idUserTable">
+        <selectKey resultClass="int" keyProperty="idClassTable">
             select last_insert_id() as idUserTable
         </selectKey>
     </insert>
@@ -18,5 +18,11 @@
 
     <select id="getAllJoinStyleTable" resultClass="edu.matc.entity.ibatis.ClassTable">
         select * from classtable as c join styletable as s where c.idStyleTable = s.idStyleTable
+    </select>
+
+    <select id="getAllJoinStyleAndUserTables" resultClass="edu.matc.entity.ibatis.ClassTable">
+        select c.idClassTable, c.classStartDate, c.classEndDate, c.classStartTime, c.classEndTime, c.classDays, s.styleName,
+                u.userFirstName, u.userLastName from classtable as c join styletable as s ON (c.idStyleTable = s.idStyleTable)
+		          JOIN usertable as u where u.idUserTable = c.idUserTable
     </select>
 </sqlMap>

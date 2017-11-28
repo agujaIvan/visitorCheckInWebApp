@@ -20,5 +20,6 @@ edu\matc\entity\ibatis\UserTable.class
 edu\matc\entity\StyletableEntity.class
 edu\matc\controller\StartupServlet.class
 edu\matc\entity\ibatis\StyleTable.class
+edu\matc\controller\ClassVisitorsServlet.class
 edu\matc\persistence\SessionFactoryProvider.class
 edu\matc\controller\AddingStatus.class

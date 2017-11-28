@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.sql.Time;
 
 public class ClassTable {
-    private int idclassTable;
+    private int idClassTable;
     private int idUserTable;
     private int idStyleTable;
     private Date classStartDate;
@@ -13,6 +13,8 @@ public class ClassTable {
     private Time classEndTime;
     private String classDays;
     private String styleName;
+    private String userFirstName;
+    private String userLastName;
 
     public ClassTable(){
 
@@ -26,6 +28,28 @@ public class ClassTable {
         this.classStartTime = startTime;
         this.classEndTime = endTime;
         this.classDays = days;
+    }
+
+    public ClassTable(int idUserTable, int idStyleTable, Date classStartDate, Date classEndDate, Time classStartTime,
+                      Time classEndTime, String classDays, String styleName, String userFirstName, String userLastName) {
+        this.idUserTable = idUserTable;
+        this.idStyleTable = idStyleTable;
+        this.classStartDate = classStartDate;
+        this.classEndDate = classEndDate;
+        this.classStartTime = classStartTime;
+        this.classEndTime = classEndTime;
+        this.classDays = classDays;
+        this.styleName = styleName;
+        this.userFirstName = userFirstName;
+        this.userLastName = userLastName;
+    }
+
+    public int getIdclassTable() {
+        return idClassTable;
+    }
+
+    public void setIdclassTable(int idclassTable) {
+        this.idClassTable = idclassTable;
     }
 
     public int getIdUserTable() {
@@ -88,5 +112,23 @@ public class ClassTable {
         return styleName;
     }
 
+    public void setStyleName(String styleName) {
+        this.styleName = styleName;
+    }
 
+    public String getUserFirstName() {
+        return userFirstName;
+    }
+
+    public void setUserFirstName(String userFirstName) {
+        this.userFirstName = userFirstName;
+    }
+
+    public String getUserLastName() {
+        return userLastName;
+    }
+
+    public void setUserLastName(String userLastName) {
+        this.userLastName = userLastName;
+    }
 }

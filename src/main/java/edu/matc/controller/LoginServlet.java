@@ -44,8 +44,9 @@ public class LoginServlet extends HttpServlet {
             } else if (currentUser.getUserRole().equals("dancer")) {
                 //pulling up data from class table
 
-                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleTable");
-                sessionInfo.createAttribute("listOfClasses", listOfClasses);
+                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables");
+                request.setAttribute("listOfClasses", listOfClasses);
+                //sessionInfo.createAttribute("listOfClasses", listOfClasses);
 
                 url = "jsp/chooseSection.jsp";
             }
