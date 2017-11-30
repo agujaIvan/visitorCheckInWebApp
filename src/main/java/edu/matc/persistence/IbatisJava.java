@@ -30,7 +30,7 @@ public class IbatisJava{
                 t = (ClassTable) t;
             } else if (s.equals("User.addNewRecord")){
                 t = (UserTable) t;
-            } else if (s.equals("Section.addNewRecord")){
+            } else if (s.equals("SectionTable.addNewRecord")){
                 t = (SectionTable) t;
             }
             smc.insert(s, t);
@@ -49,7 +49,7 @@ public class IbatisJava{
         userTable.setUserName(userName);
         userTable.setUserPassword(userPassword);
         List<UserTable> userTableList = new ArrayList<>();
-
+        //TODO get the section by id
         try {
             rd = Resources.getResourceAsReader("SqlMapConfig.xml");
             smc = SqlMapClientBuilder.buildSqlMapClient(rd);
@@ -85,6 +85,20 @@ public class IbatisJava{
             rd = Resources.getResourceAsReader("SqlMapConfig.xml");
             smc = SqlMapClientBuilder.buildSqlMapClient(rd);
             t = smc.queryForList(s, null);
+        } catch (SQLException e){
+            log.info("Error getting all records", e);
+        } catch (IOException e){
+            log.info("Error getting all records", e);
+        }
+        return t;
+    }
+
+    public Object getTheLastId(String s){
+        Object t = new Object();
+        try {
+            rd = Resources.getResourceAsReader("SqlMapConfig.xml");
+            smc = SqlMapClientBuilder.buildSqlMapClient(rd);
+            t = smc.queryForObject(s);
         } catch (SQLException e){
             log.info("Error getting all records", e);
         } catch (IOException e){

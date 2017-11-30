@@ -6,7 +6,7 @@
             <div class="row m-auto col-sm-12 d-block">
                 <div class="pt-5 form-group text-center">
                     <h2 class="">VISITORS</h2>
-                    <h3 class="">Daniel Banderas</h3>
+                    <h3 class="">${teacher}</h3>
                 </div>
             </div>
 
@@ -24,8 +24,8 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach var="list" items="${listOfClasses}">
-                                <tr>
+
+                                <!--<tr>
                                     <th scope="row">${list.classDays}</th>
                                     <td>${list.classStartTime}-${list.classEndTime}</td>
                                     <td><a href="">${list.styleName}</a></td>
@@ -36,8 +36,8 @@
                                             <span class="custom-control-indicator"></span>
                                         </label>
                                     </td>
-                                </tr>
-                            </c:forEach>
+                                </tr>-->
+
                             </tbody>
                         </table>
                     </div>

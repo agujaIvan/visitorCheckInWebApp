@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.ibatis.ClassTable;
+import edu.matc.entity.ibatis.JoinedSectionTable;
 import edu.matc.entity.ibatis.UserTable;
 import edu.matc.persistence.IbatisJava;
 
@@ -44,9 +45,10 @@ public class LoginServlet extends HttpServlet {
             } else if (currentUser.getUserRole().equals("dancer")) {
                 //pulling up data from class table
 
-                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables");
-                request.setAttribute("listOfClasses", listOfClasses);
-                //sessionInfo.createAttribute("listOfClasses", listOfClasses);
+                //List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables");
+                //request.setAttribute("listOfClasses", listOfClasses);
+                List<? super JoinedSectionTable> listOfSections = ibatisJava.getAllRecords("SectionTable.getAllJoinUserClassAndStyleTables");
+                request.setAttribute("listOfSections", listOfSections);
 
                 url = "jsp/chooseSection.jsp";
             }

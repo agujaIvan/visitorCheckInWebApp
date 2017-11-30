@@ -28,7 +28,7 @@ public class CreateLessonServlet extends HttpServlet {
         ClassTable classTable = new ClassTable();
         IbatisJava ibatisJava = new IbatisJava();
 
-        List<? super SectionTable> Section = ibatisJava.getAllRecords("getTheLastClassId");
+        //List<? super SectionTable> Section = ibatisJava.getAllRecords("getTheLastClassId");
 
         String user = request.getParameter("user");
         String category = request.getParameter("category");
@@ -67,6 +67,26 @@ public class CreateLessonServlet extends HttpServlet {
 
         ibatisJava.addRecord("Class.addNewRecord", classTable);
 
+        /* getting the last id of class table and creating the sections according
+        * with the days*/
+        ClassTable classLastId = new ClassTable();
+        classLastId = (ClassTable) ibatisJava.getTheLastId("Class.getTheLastClassId");
+
+        //putting the last id into the section class
+        SectionTable sectionTable = new SectionTable();
+        sectionTable.setIdClassTable(classLastId.getIdclassTable());
+
+        //looping through to get the days and create each section with each day
+        for (String currentItem: day) {
+            if (currentItem != null) {
+                sectionTable.setSectionDay(currentItem);
+                sectionTable.setIdStatusTable(1);
+
+                //adding the record into the database
+                ibatisJava.addRecord("SectionTable.addNewRecord", sectionTable);
+            }
+        }
+        //TODO add some type of notification informing it was added it
         String url = "jsp/administrator.jsp";
         request.getRequestDispatcher(url).forward(request, response);
 

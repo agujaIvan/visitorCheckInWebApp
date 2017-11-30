@@ -12,9 +12,7 @@
 
     <c:import url="content-classVisitors.jsp" />
 
-
-
-</div><!--close main-->
+</div>
 
 <c:import url="/js/jQuery.jsp" />
 </body>

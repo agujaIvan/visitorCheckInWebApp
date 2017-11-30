@@ -10,6 +10,7 @@
                 <a class="nav-link text-white" href="${pageContext.request.contextPath}/index.jsp">Home</a>
             </li>
             <li class="nav-item mr-4">
+                <!--//TODO create the signout process -->
                 <a class="nav-link text-white" href="#"><img class= "rounded-circle" src="${pageContext.request.contextPath}/images/img_user.png" width="40" id="myImg"/>Sign Out</a>
             </li>
         </ul>

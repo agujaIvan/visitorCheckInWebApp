@@ -25,4 +25,8 @@
                 u.userFirstName, u.userLastName from classtable as c join styletable as s ON (c.idStyleTable = s.idStyleTable)
 		          JOIN usertable as u where u.idUserTable = c.idUserTable
     </select>
+
+    <select id="getTheLastClassId" resultClass="edu.matc.entity.ibatis.ClassTable">
+        select max(idClassTable) as idClassTable from classtable;
+    </select>
 </sqlMap>

@@ -23,18 +23,18 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach var="list" items="${listOfClasses}">
+                            <c:forEach var="list" items="${listOfSections}">
                                 <tr>
-                                    <th scope="row">${list.classDays}</th>
+                                    <th scope="row">${list.sectionDay}</th>
                                     <td>${list.classStartTime}-${list.classEndTime}</td>
-                                    <td><a href="${pageContext.request.contextPath}/ClassVisitorsServlet?id=${list.getIdclassTable()}">${list.styleName}</a></td>
+                                    <td><a href="${pageContext.request.contextPath}/ClassVisitorsServlet?id=${list.idSectionTable}&style=${list.styleName}&day=${list.sectionDay}&time=${list.classStartTime}-$${list.classEndTime}&teacher=${list.userFirstName}">${list.styleName}</a></td>
                                     <td>${list.userFirstName} ${list.userLastName}</td>
-                                    <td class="lastCol">
+                                    <!--<td class="lastCol">
                                         <label class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input">
                                             <span class="custom-control-indicator"></span>
                                         </label>
-                                    </td>
+                                    </td>-->
                                 </tr>
                             </c:forEach>
                             </tbody>

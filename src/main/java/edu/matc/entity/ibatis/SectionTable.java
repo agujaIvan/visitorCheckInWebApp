@@ -6,6 +6,9 @@ public class SectionTable {
     private int idStatusTable;
     private String sectionDay;
 
+    public SectionTable() {
+    }
+
     public SectionTable(int idSectionTable, int idClassTable, int idStatusTable, String sectionDay) {
         this.idSectionTable = idSectionTable;
         this.idClassTable = idClassTable;
@@ -15,10 +18,6 @@ public class SectionTable {
 
     public int getIdSectionTable() {
         return idSectionTable;
-    }
-
-    public void setIdSectionTable(int idSectionTable) {
-        this.idSectionTable = idSectionTable;
     }
 
     public int getIdClassTable() {

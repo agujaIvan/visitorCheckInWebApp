@@ -16,8 +16,12 @@
         SELECT * FROM sectiontable
     </select>
 
-    <select id="getTheLastClassId" resultClass="edu.matc.entity.ibatis.SectionTable">
-        select max(idClassTable) as idClassTable from classtable;
+    <select id="getAllJoinUserClassAndStyleTables" resultClass="edu.matc.entity.ibatis.JoinedSectionTable">
+        select sec.idSectionTable, c.classStartTime, c.classEndTime, s.styleName, sec.sectionDay, u.userFirstName,
+        u.userLastName from classtable as c join styletable as s ON (c.idStyleTable = s.idStyleTable)
+	      JOIN usertable as u ON(u.idUserTable = c.idUserTable)
+		    JOIN sectiontable as sec
+		WHERE sec.idClassTable = c.idClassTable;
     </select>
 
 </sqlMap>
