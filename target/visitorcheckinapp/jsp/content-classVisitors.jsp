@@ -5,7 +5,8 @@
         <form class="myForm mt-3">
             <div class="row m-auto col-sm-12 d-block">
                 <div class="pt-5 form-group text-center">
-                    <h2 class="">SECTION DETAILS</h2>
+                    <h2 class="">VISITORS</h2>
+                    <h3 class="">Daniel Banderas</h3>
                 </div>
             </div>
 
@@ -15,10 +16,10 @@
                         <table class="table-sm table-striped m-auto mt-3" id="tableClass">
                             <thead>
                             <tr>
-                                <th>Date</th>
-                                <th>Schedule</th>
-                                <th>Class</th>
-                                <th>Teacher</th>
+                                <th>Status</th>
+                                <th>Signed in</th>
+                                <th>Name</th>
+                                <th>Gender</th>
                                 <th class="lastCol"></th>
                             </tr>
                             </thead>

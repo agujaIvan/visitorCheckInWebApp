@@ -54,25 +54,13 @@ public class LoginServlet extends HttpServlet {
             //adding the user to the session
             sessionInfo.createAttribute("user", currentUser);
 
-            // Redirect the flow
-            //response.sendRedirect(url);
-            //request.getRequestDispatcher(url).forward(request, response);
         } else {
             sessionInfo.createAttribute("notFound", "user wasnt found, try it again");
 
             url = "jsp/login.jsp";
-            //doGet(request, response);
+
         }
-
-        /*RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);*/
-
-        //RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-        //dispatcher.forward(request, response);
-        //String context = getServletContext().getContextPath();
         request.getRequestDispatcher(url).forward(request, response);
-        //response.sendRedirect(url);
 
     }
 

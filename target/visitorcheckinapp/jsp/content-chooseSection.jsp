@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<div id="main">
 <div class="mainDiv col-sm-12 m-auto">
     <div class="container">
         <form class="myForm mt-3">
@@ -44,4 +44,5 @@
             </div>
         </form>
     </div>
+</div>
 </div>

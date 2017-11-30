@@ -8,13 +8,8 @@
 <body>
 
     <c:import url="/jsp/navBar.jsp" />
-<div id="main">
 
     <c:import url="content-chooseSection.jsp" />
-
-
-
-</div><!--close main-->
 
     <c:import url="/js/jQuery.jsp" />
 </body>

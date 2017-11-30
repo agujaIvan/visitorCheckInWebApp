@@ -19,4 +19,5 @@
     <sqlMap resource="Class.xml"/>
     <sqlMap resource="User.xml"/>
     <sqlMap resource="Gender.xml"/>
+    <sqlMap resource="Section.xml"/>
 </sqlMapConfig>

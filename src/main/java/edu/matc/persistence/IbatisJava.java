@@ -4,6 +4,7 @@ import com.ibatis.common.resources.Resources;
 import com.ibatis.sqlmap.client.SqlMapClient;
 import com.ibatis.sqlmap.client.SqlMapClientBuilder;
 import edu.matc.entity.ibatis.ClassTable;
+import edu.matc.entity.ibatis.SectionTable;
 import edu.matc.entity.ibatis.StyleTable;
 import edu.matc.entity.ibatis.UserTable;
 import org.apache.log4j.Logger;
@@ -29,6 +30,8 @@ public class IbatisJava{
                 t = (ClassTable) t;
             } else if (s.equals("User.addNewRecord")){
                 t = (UserTable) t;
+            } else if (s.equals("Section.addNewRecord")){
+                t = (SectionTable) t;
             }
             smc.insert(s, t);
 
@@ -60,6 +63,20 @@ public class IbatisJava{
         }
 
         return userTableList;
+    }
+
+    public void updateUser(UserTable user){
+        try {
+            rd = Resources.getResourceAsReader("SqlMapConfig.xml");
+            smc = SqlMapClientBuilder.buildSqlMapClient(rd);
+
+            smc.update("User.update", user);
+
+        } catch (IOException e ) {
+            log.info("Error updating user profile", e);
+        } catch (SQLException e) {
+            log.info("Error updating user profile", e);
+        }
     }
 
     public List<Object> getAllRecords(String s){

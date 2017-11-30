@@ -14,6 +14,7 @@ public class UserTable {
     private Date userDate;
     private String userPhoto;
     private String userRole;
+    private String genderName;
 
     public UserTable(){}
 
@@ -118,5 +119,9 @@ public class UserTable {
 
     public void setIdStatusTable(int idStatusTable) {
         this.idStatusTable = idStatusTable;
+    }
+
+    public String getGenderName() {
+        return genderName;
     }
 }

@@ -21,6 +21,7 @@
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/EditUserProfile.jsp">Edit profile</a>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/AddUser.jsp">Add user</a>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/CreateLessonServlet">Create class</a>
+                <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/danceStyle.jsp">add dance style</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/administrator.jsp">Administrator</a>
             </div>

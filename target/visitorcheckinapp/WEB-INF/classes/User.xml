@@ -19,11 +19,19 @@
     </select>
 
     <select id="getByIdAndPassword" resultClass="edu.matc.entity.ibatis.UserTable">
-        SELECT * FROM usertable WHERE userName = #userName# AND userPassword = #userPassword#
+        select u.idUserTable, u.username, u.userFirstName, u.userLastName, u.userEmail, u.userPassword, u.userRole, g.genderName
+	from usertable as u JOIN gendertable as g ON (u.idGenderTable = g.idGenderTable)
+		WHERE u.userName = #userName# AND u.userPassword = #userPassword#
     </select>
 
     <select id="getAllTeachersAndAdmins" resultClass="edu.matc.entity.ibatis.UserTable">
         SELECT * FROM usertable WHERE userRole = "teacher" OR userRole = "administrator"
     </select>
+
+    <update id="update" parameterClass="edu.matc.entity.ibatis.UserTable">
+        update usertable
+        set userEmail = #userEmail#, userFirstName = #userFirstName#, userLastName = #userLastName#, userPassword = #userPassword#
+        WHERE idUserTable = #idUserTable#
+    </update>
 
 </sqlMap>

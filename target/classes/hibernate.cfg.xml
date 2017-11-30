@@ -22,11 +22,6 @@
 
         <!-- List the annotated entity class/es -->
 
-        <mapping class="edu.matc.entity.GendertableEntity"/>
-        <mapping class="edu.matc.entity.UsertableEntity"/>
-        <mapping class="edu.matc.entity.StyletableEntity"/>
-        <mapping class="edu.matc.entity.ClasstableEntity"/>
-        <mapping class="edu.matc.entity.ClassEntity"/>
         <mapping class="edu.matc.entity.StyleEntity"/>
 
 

@@ -1,6 +1,5 @@
 package edu.matc.controller;
 
-import edu.matc.entity.UsertableEntity;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

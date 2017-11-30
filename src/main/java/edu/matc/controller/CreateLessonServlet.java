@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 import edu.matc.entity.ibatis.ClassTable;
+import edu.matc.entity.ibatis.SectionTable;
 import edu.matc.entity.ibatis.StyleTable;
 import edu.matc.entity.ibatis.UserTable;
 import edu.matc.persistence.IbatisJava;
@@ -26,6 +27,8 @@ public class CreateLessonServlet extends HttpServlet {
         String selectedDay = "";
         ClassTable classTable = new ClassTable();
         IbatisJava ibatisJava = new IbatisJava();
+
+        List<? super SectionTable> Section = ibatisJava.getAllRecords("getTheLastClassId");
 
         String user = request.getParameter("user");
         String category = request.getParameter("category");
@@ -63,8 +66,9 @@ public class CreateLessonServlet extends HttpServlet {
         classTable.setClassEndDate(Date.valueOf(endDate));
 
         ibatisJava.addRecord("Class.addNewRecord", classTable);
+
         String url = "jsp/administrator.jsp";
-        response.sendRedirect(url);
+        request.getRequestDispatcher(url).forward(request, response);
 
     }
 
@@ -80,8 +84,8 @@ public class CreateLessonServlet extends HttpServlet {
         sessionInfo.createAttribute("listOfUsers", listOfUsers);
 
         String url = "jsp/createLessonClass.jsp";
-        //request.getRequestDispatcher("jsp/createLessonClass.jsp").forward(request, response);
-        response.sendRedirect(url);
+        request.getRequestDispatcher(url).forward(request, response);
+
 
     }
 }

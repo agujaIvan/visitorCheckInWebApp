@@ -24,10 +24,7 @@ public class Signup extends HttpServlet {
         List<? super GenderTable> listOfGenders = ibatisJava.getAllRecords("GenderTable.getAll");
         req.setAttribute("listOfGender", listOfGenders);
 
-        //String url = "jsp/signupPage.jsp";
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/jsp/signupPage.jsp");
-        dispatcher.forward(req, resp);
-        //resp.sendRedirect(url);
-
+        String url = "jsp/signupPage.jsp";
+        req.getRequestDispatcher(url).forward(req, resp);
     }
 }

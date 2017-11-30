@@ -18,9 +18,6 @@ public class StyleEntity {
     @Column(name = "styleName")
     private String styleName;
 
-    @OneToMany(mappedBy = "styleEntity")
-    private Set<ClassEntity> classEntity;
-
 
     public StyleEntity(){}
 
@@ -44,11 +41,4 @@ public class StyleEntity {
         this.styleName = styleName;
     }
 
-    public Set<ClassEntity> getClassEntity() {
-        return classEntity;
-    }
-
-    public void setClassEntity(Set<ClassEntity> classEntity) {
-        this.classEntity = classEntity;
-    }
 }

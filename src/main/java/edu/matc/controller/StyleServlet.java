@@ -1,6 +1,6 @@
 package edu.matc.controller;
 
-import edu.matc.entity.StyletableEntity;
+import edu.matc.entity.StyleEntity;
 import edu.matc.persistence.HibernateDao;
 
 import javax.servlet.ServletException;
@@ -18,28 +18,18 @@ import java.io.IOException;
 public class StyleServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String styleName = request.getParameter("styleName");
-        StyletableEntity style = new StyletableEntity();
+        StyleEntity style = new StyleEntity();
         HibernateDao styleDao = new HibernateDao();
 
         style.setStyleName(styleName);
-        styleDao.addNewRecord(style);
+        styleDao.addNewStyleRecord(style);
 
         HttpSession session = request.getSession();
         session.setAttribute("message", "style was successfully added");
 
         String url = "jsp/administrator.jsp";
 
-        response.sendRedirect(url);
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,
-            IOException {
-
-        /*String url = "/jsp/login.jsp";
-
-        RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(request, response);*/
+        request.getRequestDispatcher(url).forward(request, response);
     }
 
 }
