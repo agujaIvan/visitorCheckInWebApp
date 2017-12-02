@@ -9,6 +9,7 @@ edu\matc\controller\LoginServlet.class
 edu\matc\persistence\Database.class
 edu\matc\entity\ibatis\ClassTable.class
 edu\matc\persistence\IbatisJava.class
+edu\matc\entity\ibatis\VisitorsTable.class
 edu\matc\entity\ibatis\GenderTable.class
 edu\matc\utility\LocalDateAttributeConverter.class
 edu\matc\controller\Signup.class

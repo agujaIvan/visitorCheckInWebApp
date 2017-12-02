@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
 import java.sql.Time;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CreateLessonServlet",
@@ -70,7 +69,7 @@ public class CreateLessonServlet extends HttpServlet {
         /* getting the last id of class table and creating the sections according
         * with the days*/
         ClassTable classLastId = new ClassTable();
-        classLastId = (ClassTable) ibatisJava.getTheLastId("Class.getTheLastClassId");
+        classLastId = (ClassTable) ibatisJava.getRecordById("Class.getTheLastClassId", null);
 
         //putting the last id into the section class
         SectionTable sectionTable = new SectionTable();
@@ -97,8 +96,8 @@ public class CreateLessonServlet extends HttpServlet {
         IbatisJava ibatisJava    = new IbatisJava();
         SessionInfo sessionInfo  = new SessionInfo(request);
 
-        List<? super StyleTable> styleList = ibatisJava.getAllRecords("StyleTable.getAll");
-        List<? super UserTable> listOfUsers= ibatisJava.getAllRecords("User.getAllTeachersAndAdmins");
+        List<? super StyleTable> styleList = ibatisJava.getAllRecords("StyleTable.getAll", null);
+        List<? super UserTable> listOfUsers= ibatisJava.getAllRecords("User.getAllTeachersAndAdmins", null);
 
         sessionInfo.createAttribute("listOfStyles", styleList);
         sessionInfo.createAttribute("listOfUsers", listOfUsers);

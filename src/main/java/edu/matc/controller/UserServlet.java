@@ -54,13 +54,12 @@ public class UserServlet extends HttpServlet {
                 userTableList = ibatisJava.getUserByIdAndPassword(userName, password);
                 sessionInfo.createAttribute("user", userTableList.get(0));
 
-                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables");
+                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables", null);
                 req.setAttribute("listOfClasses", listOfClasses);
 
                 url = "jsp/chooseSection.jsp";
 
             } else if (req.getParameter("submit").equals("addUserByAdmin")) {
-                //TODO working on this to add the proper user for teachers using the admin page
 
                 HttpSession session = req.getSession();
                 String role = req.getParameter("typeOfUser");

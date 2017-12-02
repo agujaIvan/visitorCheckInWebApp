@@ -21,7 +21,7 @@ public class Signup extends HttpServlet {
 
 
         IbatisJava ibatisJava = new IbatisJava();
-        List<? super GenderTable> listOfGenders = ibatisJava.getAllRecords("GenderTable.getAll");
+        List<? super GenderTable> listOfGenders = ibatisJava.getAllRecords("GenderTable.getAll", null);
         req.setAttribute("listOfGender", listOfGenders);
 
         String url = "jsp/signupPage.jsp";

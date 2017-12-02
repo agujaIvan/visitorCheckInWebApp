@@ -28,6 +28,10 @@ public class JoinedSectionTable {
         return idSectionTable;
     }
 
+    public void setIdSectionTable(int idSectionTable) {
+        this.idSectionTable = idSectionTable;
+    }
+
     public String getUserFirstName() {
         return userFirstName;
     }

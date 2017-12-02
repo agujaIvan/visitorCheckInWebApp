@@ -5,14 +5,12 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 import com.ibatis.sqlmap.client.SqlMapClientBuilder;
 import edu.matc.entity.ibatis.ClassTable;
 import edu.matc.entity.ibatis.SectionTable;
-import edu.matc.entity.ibatis.StyleTable;
 import edu.matc.entity.ibatis.UserTable;
+import edu.matc.entity.ibatis.VisitorsTable;
 import org.apache.log4j.Logger;
 
 import java.io.*;
-import java.sql.Date;
 import java.sql.SQLException;
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +30,8 @@ public class IbatisJava{
                 t = (UserTable) t;
             } else if (s.equals("SectionTable.addNewRecord")){
                 t = (SectionTable) t;
+            }  else if (s.equals("VisitorsTable.addNewRecord")){
+                t = (VisitorsTable) t;
             }
             smc.insert(s, t);
 
@@ -49,7 +49,7 @@ public class IbatisJava{
         userTable.setUserName(userName);
         userTable.setUserPassword(userPassword);
         List<UserTable> userTableList = new ArrayList<>();
-        //TODO get the section by id
+
         try {
             rd = Resources.getResourceAsReader("SqlMapConfig.xml");
             smc = SqlMapClientBuilder.buildSqlMapClient(rd);
@@ -79,12 +79,17 @@ public class IbatisJava{
         }
     }
 
-    public List<Object> getAllRecords(String s){
+    public List<Object> getAllRecords(String s, Object obj){
         List<Object> t = new ArrayList<>();
         try {
             rd = Resources.getResourceAsReader("SqlMapConfig.xml");
             smc = SqlMapClientBuilder.buildSqlMapClient(rd);
-            t = smc.queryForList(s, null);
+
+            if (obj == null) {
+                t = smc.queryForList(s, null);
+            } else {
+                t = smc.queryForList(s, obj);
+            }
         } catch (SQLException e){
             log.info("Error getting all records", e);
         } catch (IOException e){
@@ -93,12 +98,16 @@ public class IbatisJava{
         return t;
     }
 
-    public Object getTheLastId(String s){
+    public Object getRecordById(String s, Object obj){
         Object t = new Object();
         try {
             rd = Resources.getResourceAsReader("SqlMapConfig.xml");
             smc = SqlMapClientBuilder.buildSqlMapClient(rd);
-            t = smc.queryForObject(s);
+            if (obj == null) {
+                t = smc.queryForObject(s);
+            } else {
+                t = smc.queryForObject(s, obj);
+            }
         } catch (SQLException e){
             log.info("Error getting all records", e);
         } catch (IOException e){

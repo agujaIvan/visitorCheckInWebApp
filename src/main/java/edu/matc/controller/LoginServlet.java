@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
 
                 //List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables");
                 //request.setAttribute("listOfClasses", listOfClasses);
-                List<? super JoinedSectionTable> listOfSections = ibatisJava.getAllRecords("SectionTable.getAllJoinUserClassAndStyleTables");
+                List<? super JoinedSectionTable> listOfSections = ibatisJava.getAllRecords("SectionTable.getAllJoinUserClassAndStyleTables", null);
                 request.setAttribute("listOfSections", listOfSections);
 
                 url = "jsp/chooseSection.jsp";

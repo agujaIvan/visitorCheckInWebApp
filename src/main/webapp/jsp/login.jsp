@@ -18,9 +18,9 @@
             </div>
             <div class="container2">
                 <!--<input type="checkbox" />
-                <p class="labels2">Login as an Teacher / Admin</p>-->
+                <p class="labels2">Login as an Teacher / Admin</p>
                 <input type="checkbox" checked="checked" />
-                <p class="labels2">Remember me</p>
+                <p class="labels2">Remember me</p>-->
             </div>
             <button type="submit" id="btnLogin" name="submit">Login</button>
         </form>

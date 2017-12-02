@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="VisitorsTable">
+
+    <insert id="addNewRecord" parameterClass="edu.matc.entity.ibatis.VisitorsTable">
+        insert into visitorstable(idSectionTable, idUserTable, idStatusTable, whenSignedIn)
+        values (#idSectionTable#, #idUserTable#, #idStatusTable#, #whenSignedIn#)
+
+        <selectKey resultClass="int" keyProperty="idVisitorsTable">
+            select last_insert_id() as idVisitorsTable
+        </selectKey>
+    </insert>
+
+    <select id="getAll" resultClass="edu.matc.entity.ibatis.VisitorsTable">
+        SELECT * FROM visitorstable
+    </select>
+
+    <select id="getAllVisitorsBySectionId" resultClass="edu.matc.entity.ibatis.JoinedVisitorsTable">
+        SELECT st.statusName, v.whenSignedIn, u.userName, g.genderName FROM statustable AS st
+	      JOIN visitorstable AS v ON (st.idStatusTable = v.idStatusTable)
+		    JOIN usertable AS u ON (v.idUserTable = u.idUserTable)
+			  JOIN gendertable AS g ON (u.idGenderTable = g.idGenderTable)
+		WHERE v.idSectionTable = #idSectionTable#;
+    </select>
+
+</sqlMap>

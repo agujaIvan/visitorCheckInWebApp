@@ -20,6 +20,10 @@ public class SectionTable {
         return idSectionTable;
     }
 
+    public void setIdSectionTable(int idSectionTable) {
+        this.idSectionTable = idSectionTable;
+    }
+
     public int getIdClassTable() {
         return idClassTable;
     }

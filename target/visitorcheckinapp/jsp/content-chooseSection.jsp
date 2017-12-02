@@ -27,7 +27,7 @@
                                 <tr>
                                     <th scope="row">${list.sectionDay}</th>
                                     <td>${list.classStartTime}-${list.classEndTime}</td>
-                                    <td><a href="${pageContext.request.contextPath}/ClassVisitorsServlet?id=${list.idSectionTable}&style=${list.styleName}&day=${list.sectionDay}&time=${list.classStartTime}-$${list.classEndTime}&teacher=${list.userFirstName}">${list.styleName}</a></td>
+                                    <td><a href="${pageContext.request.contextPath}/ClassVisitorsServlet?id=${list.idSectionTable}">${list.styleName}</a></td>
                                     <td>${list.userFirstName} ${list.userLastName}</td>
                                     <!--<td class="lastCol">
                                         <label class="custom-control custom-checkbox">

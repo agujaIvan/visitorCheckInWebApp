@@ -4,10 +4,12 @@ C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\contr
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\ibatis\GenderTable.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\controller\ClassVisitorsServlet.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\Database.java
+C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\ibatis\VisitorsTable.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\controller\AddingStatus.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\IbatisJava.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\controller\UserServlet.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\persistence\HibernateDao.java
+C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\ibatis\JoinedVisitorsTable.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\ibatis\JoinedSectionTable.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\ibatis\StyleTable.java
 C:\Users\aguja001\IdeaProjects\visitorCheckInWebApp\src\main\java\edu\matc\entity\StyleEntity.java
