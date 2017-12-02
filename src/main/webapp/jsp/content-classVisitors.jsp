@@ -33,7 +33,7 @@
                                     <td>${visitors.userName}</td>
                                     <td>${visitors.genderName}</td>
                                 </tr>
-                            </c:forEach>>
+                            </c:forEach>
                             </tbody>
                         </table>
                     </div>
