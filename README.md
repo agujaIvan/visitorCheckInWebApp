@@ -48,7 +48,8 @@ will be.
 
 * [Screen Design](DesignDocuments/Screens.md)
 * [Application Flow](DesignDocuments/applicationFlow.md)
-* [Database Design](DesignDocuments/database.png)
+* [Application Flow Diagram](DesignDocuments/appFlow.png)
+* [Database Design](DesignDocuments/databaseRelationShip.png)
 
 ### [Project Plan](ProjectPlan.md)
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="GenderTable">
+
+    <insert id="addNewRecord" parameterClass="edu.matc.entity.ibatis.GenderTable">
+        insert into gendertable(genderName)
+        values (#genderName#)
+
+        <selectKey resultClass="int" keyProperty="idGenderTable">
+            select last_insert_id() as idGenderTable
+        </selectKey>
+    </insert>
+
+    <select id="getAll" resultClass="edu.matc.entity.ibatis.GenderTable">
+        SELECT * FROM gendertable
+    </select>
+
+</sqlMap>
