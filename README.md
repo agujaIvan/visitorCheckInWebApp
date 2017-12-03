@@ -42,7 +42,7 @@ will be.
 
 ### Individual Research Topic 
 
-* AngujarJS
+* Ibatis persistence framework
   
 ### Design
 

@@ -48,11 +48,11 @@ more detail.
 - [ ] Add entities for remaining tables
 
 ### Week 9
-- [ ] Research the web for some angular idea 
+- [ ] Research the web for ibatis 
 - [ ] Time log entries
 
 ### Week 10
-- [ ] Apply angular on some web pages
+- [ ] Apply ibatis on some web pages
 - [ ] Time log entries
 
 ### Week 11

@@ -32,3 +32,24 @@
 | 10/11/17 | working on the administrator page and watching videos for week 7 | 5 | |
 | 10/14/17 | working on the edit user profile page | 6 | |
 | 10/15/17 | working on the edit user pages | 3 | |
+| 10/19/17 | stuck struggling with week7 exercise activity 3 | 3 | |
+| 10/20/17 | working on activity for week 8 | 6 | |
+| 10/22/17 | re designing the chooseSectionPage | 1 | |
+| 10/22/17 | fixing the navbar on adduser and fixing issues with the cancel buttons page | 3.75 | |
+| 10/22/17 | Struggling to implement Hibernate generic  DAO | 3 | |
+| 10/23/17 | re designing the session object, the add user, edit user profile and dance style page | 2 | |
+| 10/27/17 | watching videos and working on ajax for some form | 6 | |
+| 10/29/17 | watching videos and tutorials about hibernate| 6 | |
+| 10/30/17 | working on team proejct |  | |
+| 11/17/17 | Struggling on Hibernate | 5 | |
+| 11/18/17 | Struggling to use hibernate or JPA using relational database so I switch to IBATIS | 8 | |
+| 11/19/17 | putting the module create class and some others pages to work with ibatis | 5 | |
+| 11/24/17 | working on signup page, create class diagram and section table| 7 | |
+| 11/25/17 | fixing some issues still with the request dispatcher and forward to a page| 2 | |
+| 11/25/17 | working on the add user and admin page putting to storage data to database and create app flow diagram| 3.5 | |
+| 11/27/17 | working on section or class visitors table| 1.5 | |
+| 11/30/17 | working on the section and visitors tables, creating the sql joins and query paramenters| 3.5 | |
+| 11/30/17 | creating the visitors table and page| 2.5 | |
+| 12/01/17 | working on the visitors page and table| 5 | |
+| 12/02/17 | designing the visitors page on bootstrap | 3 | |
+| 12/02/17 | adding the logout process and the new visitor page | 3 | |
