@@ -17,11 +17,19 @@
     </select>
 
     <select id="getAllVisitorsBySectionId" resultClass="edu.matc.entity.ibatis.JoinedVisitorsTable">
-        SELECT st.statusName, v.whenSignedIn, u.userName, g.genderName FROM statustable AS st
+        SELECT st.statusName, v.whenSignedIn, u.userName, u.idUserTable, g.genderName FROM statustable AS st
 	      JOIN visitorstable AS v ON (st.idStatusTable = v.idStatusTable)
 		    JOIN usertable AS u ON (v.idUserTable = u.idUserTable)
 			  JOIN gendertable AS g ON (u.idGenderTable = g.idGenderTable)
 		WHERE v.idSectionTable = #idSectionTable#;
+    </select>
+
+    <select id="getUserByIdAndSectionId" resultClass="edu.matc.entity.ibatis.JoinedVisitorsTable">
+        SELECT * FROM visitorstable WHERE idSectionTable = #idSectionTable# AND idUserTable = #idUserTable#;
+    </select>
+
+    <select id="deleteUserByIdAndSectionId" resultClass="edu.matc.entity.ibatis.JoinedVisitorsTable">
+        DELETE FROM visitorstable WHERE idSectionTable = #idSectionTable# AND idUserTable = #idUserTable#;
     </select>
 
 </sqlMap>

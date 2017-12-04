@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 
 public class JoinedVisitorsTable {
     private int idSectionTable;
+    private int idUserTable;
     private String statusName;
     private Timestamp whenSignedIn;
     private String userName;
@@ -18,6 +19,14 @@ public class JoinedVisitorsTable {
 
     public int getIdSectionTable() {
         return idSectionTable;
+    }
+
+    public int getIdUserTable() {
+        return idUserTable;
+    }
+
+    public void setIdUserTable(int idUserTable) {
+        this.idUserTable = idUserTable;
     }
 
     public void setIdSectionTable(int idSectionTable) {

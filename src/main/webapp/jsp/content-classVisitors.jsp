@@ -41,8 +41,20 @@
             </div>
             <div class="myContainers">
                 <div class="w-50 m-auto pt-5 pb-4">
-                    <button class="form-control btn-primary" type="submit" name="signIn" value="signIn">Sign in</button>
+                    <c:choose>
+                        <c: when test = "${isInSection} == 'yes'">
+                            <button class="form-control btn-primary" type="submit" name="signIn" value="signIn">Remove</button>
+                        </c:>
+                        <c:otherwise>
+                            <button class="form-control btn-primary" type="submit" name="signIn" value="signIn">Sign in</button>
+                        </c:otherwise>
+                    </c:choose>
+                    <p>the user is on the section</p>
                 </div>
+                <c:if test = "${isInSection} == 'yes'" >
+                    <p>the user is on the section</p>
+                </c:if>
+
             </div>
         </form>
     </div>

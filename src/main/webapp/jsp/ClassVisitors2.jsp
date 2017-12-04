@@ -117,9 +117,19 @@
                     </div>
 
                     <div class="col-sm-2">
-                        <a href="${pageContext.request.contextPath}/ClassVisitorsServlet" class="btn btn-info btn-lg">
-                            <span class="glyphicon glyphicon-plus"></span> SignIn
-                        </a>
+                        <c:choose>
+                            <c:when test = "${isInSection == 'yes'}">
+                                <a href="${pageContext.request.contextPath}/ClassVisitorsServlet?remove=true" class="btn btn-info btn-lg">
+                                    <span class="glyphicon glyphicon-minus"></span> Remove
+                                </a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="${pageContext.request.contextPath}/ClassVisitorsServlet?signIn=true" class="btn btn-info btn-lg">
+                                    <span class="glyphicon glyphicon-plus"></span> SignIn
+                                </a>
+                            </c:otherwise>
+                        </c:choose>
+
                     </div>
                 </div>
             </div>

@@ -115,4 +115,20 @@ public class IbatisJava{
         }
         return t;
     }
+
+    public int deleteRecordById(String s, Object obj){
+        int result = 0;
+        try {
+            rd = Resources.getResourceAsReader("SqlMapConfig.xml");
+            smc = SqlMapClientBuilder.buildSqlMapClient(rd);
+
+                result = smc.delete(s, obj);
+            }
+         catch (SQLException e){
+            log.info("Error getting all records", e);
+        } catch (IOException e){
+            log.info("Error getting all records", e);
+        }
+        return result;
+    }
 }

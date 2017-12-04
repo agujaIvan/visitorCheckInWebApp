@@ -27,8 +27,6 @@ public class CreateLessonServlet extends HttpServlet {
         ClassTable classTable = new ClassTable();
         IbatisJava ibatisJava = new IbatisJava();
 
-        //List<? super SectionTable> Section = ibatisJava.getAllRecords("getTheLastClassId");
-
         String user = request.getParameter("user");
         String category = request.getParameter("category");
         String startTime = request.getParameter("from");
