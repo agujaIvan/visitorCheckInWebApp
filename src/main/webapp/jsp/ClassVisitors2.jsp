@@ -119,7 +119,7 @@
                     <div class="col-sm-2">
                         <c:choose>
                             <c:when test = "${isInSection == 'yes'}">
-                                <a href="${pageContext.request.contextPath}/ClassVisitorsServlet?remove=true" class="btn btn-info btn-lg">
+                                <a href="${pageContext.request.contextPath}/ClassVisitorsServlet" class="btn btn-info btn-lg">
                                     <span class="glyphicon glyphicon-minus"></span> Remove
                                 </a>
                             </c:when>

@@ -19,7 +19,6 @@ public class Signup extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
         IbatisJava ibatisJava = new IbatisJava();
         List<? super GenderTable> listOfGenders = ibatisJava.getAllRecords("GenderTable.getAll", null);
         req.setAttribute("listOfGender", listOfGenders);

@@ -34,4 +34,11 @@ public class IbatisJavaTest {
         //obj = ibatisJava.getRecordById("SectionTable.getSectionByIdJoinUserClassAndStyleTables", sectionTable);
     }
 
+    @Test
+    public void deleteRecord() throws Exception{
+        IbatisJava ibatisJava = new IbatisJava();
+
+        int result = ibatisJava.deleteRecordById("VisitorsTable.deleteUserByIdAndSectionId", 6);
+    }
+
 }

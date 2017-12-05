@@ -28,8 +28,8 @@
         SELECT * FROM visitorstable WHERE idSectionTable = #idSectionTable# AND idUserTable = #idUserTable#;
     </select>
 
-    <select id="deleteUserByIdAndSectionId" resultClass="edu.matc.entity.ibatis.JoinedVisitorsTable">
-        DELETE FROM visitorstable WHERE idSectionTable = #idSectionTable# AND idUserTable = #idUserTable#;
-    </select>
+    <delete id="deleteUserByIdAndSectionId" parameterClass="int">
+        DELETE FROM visitorstable WHERE idVisitorsTable = #idVisitorsTable#;
+    </delete>
 
 </sqlMap>

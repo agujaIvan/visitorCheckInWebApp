@@ -3,6 +3,7 @@ package edu.matc.entity.ibatis;
 import java.sql.Timestamp;
 
 public class JoinedVisitorsTable {
+    private int idVisitorsTable;
     private int idSectionTable;
     private int idUserTable;
     private String statusName;
@@ -11,6 +12,14 @@ public class JoinedVisitorsTable {
     private String genderName;
 
     public JoinedVisitorsTable() {
+    }
+
+    public int getIdVisitorsTable() {
+        return idVisitorsTable;
+    }
+
+    public void setIdVisitorsTable(int idVisitorsTable) {
+        this.idVisitorsTable = idVisitorsTable;
     }
 
     public String getStatusName() {
