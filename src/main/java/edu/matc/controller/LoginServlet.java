@@ -43,10 +43,7 @@ public class LoginServlet extends HttpServlet {
                 sessionInfo.removeAttribute("message");
 
             } else if (currentUser.getUserRole().equals("dancer")) {
-                //pulling up data from class table
 
-                //List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables");
-                //request.setAttribute("listOfClasses", listOfClasses);
                 List<? super JoinedSectionTable> listOfSections = ibatisJava.getAllRecords("SectionTable.getAllJoinUserClassAndStyleTables", null);
                 request.setAttribute("listOfSections", listOfSections);
 

@@ -22,6 +22,7 @@
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/AddUser.jsp">Add user</a>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/CreateLessonServlet">Create class</a>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/danceStyle.jsp">add dance style</a>
+                <a class="dropdown-item" href="${pageContext.request.contextPath}/ChooseSectionServlet">List of sections</a>
                 <!--todo add a link to choose a section -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/jsp/administrator.jsp">Administrator</a>

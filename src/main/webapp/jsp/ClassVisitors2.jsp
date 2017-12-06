@@ -64,6 +64,7 @@
                         <li><a href="${pageContext.request.contextPath}/jsp/AddUser.jsp">Add user</a></li>
                         <li><a href="${pageContext.request.contextPath}/CreateLessonServlet">Create class</a></li>
                         <li><a href="${pageContext.request.contextPath}/jsp/danceStyle.jsp">add dance style</a></li>
+                        <li><a href="${pageContext.request.contextPath}/ChooseSectionServlet">List of sections</a></li>
                         <li><a href="${pageContext.request.contextPath}/jsp/administrator.jsp">Administrator</a></li>
                     </ul>
                 </li>
