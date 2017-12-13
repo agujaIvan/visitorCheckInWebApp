@@ -1,0 +1,20 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<script src="${pageContext.request.contextPath}/assets/web/assets/jquery/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="${pageContext.request.contextPath}/assets/popper/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/tether/tether.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/smooth-scroll/smooth-scroll.js"></script>
+<script src="${pageContext.request.contextPath}/assets/shopping-cart/minicart.js"></script>
+<script src="${pageContext.request.contextPath}/assets/shopping-cart/jquery.easing.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/shopping-cart/minicart-customizer.js"></script>
+<script src="${pageContext.request.contextPath}/assets/dropdown/js/script.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/jquery-mb-vimeo_player/jquery.mb.vimeo_player.js"></script>
+<script src="${pageContext.request.contextPath}/assets/masonry/masonry.pkgd.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+<script src="${pageContext.request.contextPath}/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/theme/js/script.js"></script>
+<script src="${pageContext.request.contextPath}/assets/mobirise-gallery/player.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/mobirise-gallery/script.js"></script>
+<script src="${pageContext.request.contextPath}/assets/mobirise-slider-video/script.js"></script>

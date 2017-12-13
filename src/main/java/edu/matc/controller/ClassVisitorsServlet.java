@@ -102,7 +102,7 @@ public class ClassVisitorsServlet extends HttpServlet {
         }
 
         //forwarding the flow to a jsp page
-        String url = "jsp/ClassVisitors2.jsp";
+        String url = "jsp/classVisitors.jsp";
         request.getRequestDispatcher(url).forward(request, response);
     }
 

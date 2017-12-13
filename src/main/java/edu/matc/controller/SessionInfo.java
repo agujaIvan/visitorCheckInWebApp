@@ -1,6 +1,7 @@
 package edu.matc.controller;
 
 
+import edu.matc.entity.ibatis.UserTable;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletContext;
@@ -39,7 +40,7 @@ public class SessionInfo {
     public void isLogIn(HttpServletRequest req, HttpServletResponse rep){
         Object user = session.getAttribute("user");
         if (user == null){
-            String url = "/index.jsp";
+            String url = "/jsp/unregister.jsp";
             try {
                 rep.sendRedirect(req.getContextPath()+url);
             } catch (IOException e) {
@@ -48,4 +49,26 @@ public class SessionInfo {
         }
     }
 
+    public void isAdmin(HttpServletRequest req, HttpServletResponse rep){
+        Object user = session.getAttribute("user");
+        String url = null;
+
+        if (user == null){
+            url = "/jsp/unregister.jsp";
+        } else {
+            UserTable currentUser = (UserTable) user;
+            if (!currentUser.getUserRole().equals("administrator") ){
+                url = "/jsp/unregister.jsp";
+            }
+        }
+        if (url != null) {
+            try {
+                rep.sendRedirect(req.getContextPath()+url);
+            }
+            catch (IOException e) {
+                log.error("error loging out the user", e);
+            }
+        }
+
+    }
 }

@@ -83,8 +83,8 @@ public class CreateLessonServlet extends HttpServlet {
                 ibatisJava.addRecord("SectionTable.addNewRecord", sectionTable);
             }
         }
-        //TODO add some type of notification informing it was added it
-        String url = "jsp/administrator.jsp";
+
+        String url = "jsp/adminPortal.jsp";
         request.getRequestDispatcher(url).forward(request, response);
 
     }

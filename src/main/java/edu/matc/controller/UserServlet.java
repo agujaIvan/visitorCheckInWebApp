@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.matc.entity.ibatis.ClassTable;
+import edu.matc.entity.ibatis.JoinedSectionTable;
 import edu.matc.entity.ibatis.UserTable;
 import edu.matc.persistence.HibernateDao;
 import edu.matc.persistence.IbatisJava;
@@ -45,17 +46,16 @@ public class UserServlet extends HttpServlet {
                 IbatisJava ibatisJava = new IbatisJava();
                 List<UserTable> userTableList = new ArrayList<>();
 
-
                 //creating and saving the user to the database
                 createAndStoreUser(Integer.parseInt(gender), 1, userName, password, email, firstName, lastName,
                                     Date.valueOf(currentDate), "", "dancer");
 
-
                 userTableList = ibatisJava.getUserByIdAndPassword(userName, password);
                 sessionInfo.createAttribute("user", userTableList.get(0));
 
-                List<? super ClassTable> listOfClasses = ibatisJava.getAllRecords("Class.getAllJoinStyleAndUserTables", null);
-                req.setAttribute("listOfClasses", listOfClasses);
+                List<? super JoinedSectionTable> listOfSections =
+                        ibatisJava.getAllRecords("SectionTable.getAllJoinUserClassAndStyleTables", null);
+                req.setAttribute("listOfSections", listOfSections);
 
                 url = "jsp/chooseSection.jsp";
 
@@ -75,7 +75,7 @@ public class UserServlet extends HttpServlet {
                 //updating the user in the session
                 session.setAttribute("message", "user was successfully added");
 
-                url = "jsp/administrator.jsp";
+                url = "jsp/adminPortal.jsp";
             } else if (req.getParameter("submit").equals("editUser")) {
 
                 IbatisJava ibatisJava = new IbatisJava();
@@ -94,12 +94,13 @@ public class UserServlet extends HttpServlet {
                 //updating the user in the database
                 ibatisJava.updateUser(userInfo);
 
-                req.setAttribute("message", "info was successfully updated");
-                url = "jsp/administrator.jsp";
+                if (userInfo.getUserRole().equals("dancer")){
+                    url = "jsp/dancerPortal.jsp";
+                } else {
+                    url = "jsp/adminPortal.jsp";
+                }
 
-            } else if (req.getParameter("submit").equals("cancel")) {
-                url = "jsp/administrator.jsp";
-                sessionInfo.removeAttribute("message");
+                req.setAttribute("message", "info was successfully updated");
             }
 
             req.getRequestDispatcher(url).forward(req, resp);

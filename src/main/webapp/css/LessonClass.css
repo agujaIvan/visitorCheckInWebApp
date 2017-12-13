@@ -1,0 +1,93 @@
+﻿
+body {
+
+    background-image:url("../images/bglandpage.jpeg");
+}
+
+form{
+	
+	background-color:#ffffff;
+}
+
+@media (min-width:769px) {
+
+    .mainDiv {
+       
+        width:600px;
+    }
+
+    .myDropdownMenu {
+    
+        right: 0;
+        left: auto;
+    }
+
+    #myImg {
+
+    margin-top:-7px;
+    margin-left:-45px;
+    position:absolute;
+}
+
+}
+
+.chkDivs {
+
+    margin:0;
+    width:60px;
+    height:60px;
+    padding:0;
+    display:inline-block;
+    text-align:center;
+
+}
+
+    .chkDivs > label {    
+        
+        margin:0 auto;
+        padding:0;
+        display:block;
+        text-align:center;
+    }
+
+#lblSun, #lblMon, #lblTue, #lblWed, #lblThu, #lblFri, #lblSat {
+
+    margin-left:22px;
+
+}
+
+.sunDiv {
+
+    
+    background-color:#808080;
+}
+
+.monDiv {
+
+    background-color:#0094ff;
+}
+
+.tueDiv {
+
+    background-color:#ff6a00;
+}
+
+.wedDiv {
+
+    background-color:#ffd800;
+}
+
+.thuDiv {
+
+    background-color:#00ff21;
+}
+
+.friDiv {
+
+    background-color:#ff00dc;
+}
+
+.satDiv {
+
+    background-color:#0ff;
+}

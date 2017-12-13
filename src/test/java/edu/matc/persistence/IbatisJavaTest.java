@@ -9,6 +9,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class IbatisJavaTest {
+/*
     @Test
     public void getAllRecordsById() throws Exception {
         IbatisJava ibatisJava = new IbatisJava();
@@ -28,7 +29,8 @@ public class IbatisJavaTest {
 
         Object obj = new Object();
         visitors.setIdSectionTable(1);
-        List<? super JoinedVisitorsTable> listOfVisitors = ibatisJava.getAllRecords("VisitorsTable.getAllVisitorsBySectionId", "1");
+        List<? super JoinedVisitorsTable> listOfVisitors
+                = ibatisJava.getAllRecords("VisitorsTable.getAllVisitorsBySectionId", "1");
         String ivan = "hey";
 
         //obj = ibatisJava.getRecordById("SectionTable.getSectionByIdJoinUserClassAndStyleTables", sectionTable);
@@ -38,7 +40,7 @@ public class IbatisJavaTest {
     public void deleteRecord() throws Exception{
         IbatisJava ibatisJava = new IbatisJava();
 
-        int result = ibatisJava.deleteRecordById("VisitorsTable.deleteUserByIdAndSectionId", 6);
+        int result = ibatisJava.deleteRecordById("VisitorsTable.deleteUserByIdAndSectionId", 1);
     }
-
+*/
 }
