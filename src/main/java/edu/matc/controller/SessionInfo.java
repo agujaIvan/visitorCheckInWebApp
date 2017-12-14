@@ -57,7 +57,7 @@ public class SessionInfo {
             url = "/jsp/unregister.jsp";
         } else {
             UserTable currentUser = (UserTable) user;
-            if (!currentUser.getUserRole().equals("administrator") ){
+            if (currentUser.getUserRole().equals("dancer")  ){
                 url = "/jsp/unregister.jsp";
             }
         }

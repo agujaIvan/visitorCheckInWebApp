@@ -27,7 +27,7 @@ public class StyleServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("message", "style was successfully added");
 
-        String url = "jsp/administrator.jsp";
+        String url = "jsp/adminPortal.jsp";
 
         request.getRequestDispatcher(url).forward(request, response);
     }

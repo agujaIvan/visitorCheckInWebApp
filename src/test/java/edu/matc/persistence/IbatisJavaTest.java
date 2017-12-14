@@ -9,7 +9,7 @@ import org.junit.Test;
 import java.util.List;
 
 public class IbatisJavaTest {
-/*
+
     @Test
     public void getAllRecordsById() throws Exception {
         IbatisJava ibatisJava = new IbatisJava();
@@ -42,5 +42,5 @@ public class IbatisJavaTest {
 
         int result = ibatisJava.deleteRecordById("VisitorsTable.deleteUserByIdAndSectionId", 1);
     }
-*/
+
 }

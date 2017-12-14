@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "styletable")
+@Table(name = "styleTable")
 public class StyleEntity {
 
     @Id

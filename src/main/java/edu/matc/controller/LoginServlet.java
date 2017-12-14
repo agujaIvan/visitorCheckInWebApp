@@ -37,7 +37,7 @@ public class LoginServlet extends HttpServlet {
             UserTable currentUser = new UserTable();
             currentUser = userTableList.get(0);
 
-            if (currentUser.getUserRole().equals("administrator")) {
+            if (currentUser.getUserRole().equals("administrator") || currentUser.getUserRole().equals("teacher")) {
                 url = "jsp/adminPortal.jsp";
 
                 sessionInfo.removeAttribute("message");

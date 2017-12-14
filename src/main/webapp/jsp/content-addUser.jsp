@@ -23,9 +23,6 @@
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
                 <<h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">ADD USER</h2>
-                <!--<h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
-                    Easily add subscribe and contact forms without any server-side integration.
-                </h3>-->
             </div>
         </div>
     </div>
@@ -43,7 +40,7 @@
                                 <label class="form-control-label mbr-fonts-style display-7" for="userName-form1-4t">
                                     User name</label>
                                 <input type="text" class="form-control" name="userName"
-                                       data-form-field="userName" id="userName-form1-4t">
+                                       data-form-field="userName" id="userName-form1-4t" autofocus>
                             </div>
 
                         </div>
