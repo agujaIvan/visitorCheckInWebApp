@@ -18,7 +18,7 @@
         SELECT * FROM userTable
     </select>
 
-    <select id="getByIdAndPassword" resultClass="edu.matc.entity.ibatis.UserTable">
+    <select id="getByIdAndPasswor4 d" resultClass="edu.matc.entity.ibatis.UserTable">
         select u.idUserTable, u.userName, u.userFirstName, u.userLastName, u.userEmail, u.userPassword, u.userRole, g.genderName
 	from userTable as u JOIN genderTable as g ON (u.idGenderTable = g.idGenderTable)
 		WHERE u.userName = #userName# AND u.userPassword = #userPassword#

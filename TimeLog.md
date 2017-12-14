@@ -53,3 +53,11 @@
 | 12/01/17 | working on the visitors page and table| 5 | |
 | 12/02/17 | designing the visitors page on bootstrap | 3 | |
 | 12/02/17 | adding the logout process and the new visitor page | 3 | |
+| 12/03/17 | working on visitors page to change the button from signin to remove | 2 | |
+| 12/05/17 | adding the list of section link in the nav bar and servlet, and creating authorization to the application through session| 3 | |
+| 12/07/17 | switching over the design of edit profile and doing some validation | 8 | |
+| 12/08/17 | re designing the login page and other pages | 4 | |
+| 12/09/17 | re designing the signup page and edit profile pages | 3 | |
+| 12/10/17 | re designing the add user page by admin, the landing page and admin | 1.5 | |
+| 12/11/17 | adding the control session, fixing issues with the admin nav, and validation in the signup page| 6.5 | |
+| 12/12/17 | finishing up the session control, re designing the admin portal, dancer portal page, deplying to aws, fixing issues with ibatis case sensitive | 7 | |
